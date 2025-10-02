@@ -18,6 +18,15 @@
         <p>RUT: <strong id="selected-rut"></strong></p>
 
         <form action="send_client.php" method="POST">
+            <label for="name">Nombre completo:</label>
+            <input type="text" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea name="message" required></textarea>
+
             <label for="razon-social">Razón social:</label>
             <input type="text" id="razon-social" name="razon-social" required>
 
