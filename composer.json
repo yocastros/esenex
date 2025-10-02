@@ -1,0 +1,12 @@
+{
+    "name": "rcastro/esenex",
+    "description": "Proyecto web con Webpay",
+    "authors": [
+        {
+            "name": "Raúl Castro"
+        }
+    ],
+    "require": {
+        "transbank/transbank-sdk": "^4.0"
+    }
+}

@@ -1,0 +1,30 @@
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "plan" in /home/cca29221/public_html/confirmacion.php on line 20
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "rut" in /home/cca29221/public_html/confirmacion.php on line 21
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "razon-social" in /home/cca29221/public_html/confirmacion.php on line 24
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "giro" in /home/cca29221/public_html/confirmacion.php on line 25
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "direccion" in /home/cca29221/public_html/confirmacion.php on line 26
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "comuna" in /home/cca29221/public_html/confirmacion.php on line 27
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "ciudad" in /home/cca29221/public_html/confirmacion.php on line 28
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "email" in /home/cca29221/public_html/confirmacion.php on line 29
+[23-Jan-2025 02:35:25 UTC] PHP Warning:  Undefined array key "telefono" in /home/cca29221/public_html/confirmacion.php on line 30
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "plan" in /home/cca29221/public_html/confirmacion.php on line 20
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "rut" in /home/cca29221/public_html/confirmacion.php on line 21
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "razon-social" in /home/cca29221/public_html/confirmacion.php on line 24
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "giro" in /home/cca29221/public_html/confirmacion.php on line 25
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "direccion" in /home/cca29221/public_html/confirmacion.php on line 26
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "comuna" in /home/cca29221/public_html/confirmacion.php on line 27
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "ciudad" in /home/cca29221/public_html/confirmacion.php on line 28
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "email" in /home/cca29221/public_html/confirmacion.php on line 29
+[23-Jan-2025 02:36:57 UTC] PHP Warning:  Undefined array key "telefono" in /home/cca29221/public_html/confirmacion.php on line 30
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "plan" in /home/cca29221/public_html/confirmacion.php on line 20
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "rut" in /home/cca29221/public_html/confirmacion.php on line 21
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "razon-social" in /home/cca29221/public_html/confirmacion.php on line 24
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "giro" in /home/cca29221/public_html/confirmacion.php on line 25
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "direccion" in /home/cca29221/public_html/confirmacion.php on line 26
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "comuna" in /home/cca29221/public_html/confirmacion.php on line 27
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "ciudad" in /home/cca29221/public_html/confirmacion.php on line 28
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "email" in /home/cca29221/public_html/confirmacion.php on line 29
+[23-Jan-2025 02:43:44 UTC] PHP Warning:  Undefined array key "telefono" in /home/cca29221/public_html/confirmacion.php on line 30
+[31-Jan-2025 01:10:40 UTC] PHP Parse error:  syntax error, unexpected string content "597052" in /home/cca29221/public_html/test_webpay.php on line 53
+[31-Jan-2025 01:11:07 UTC] PHP Parse error:  syntax error, unexpected string content "597052" in /home/cca29221/public_html/test_webpay.php on line 53
+[31-Jan-2025 01:11:19 UTC] PHP Parse error:  syntax error, unexpected string content "597052" in /home/cca29221/public_html/test_webpay.php on line 53

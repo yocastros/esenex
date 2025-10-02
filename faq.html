@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="images/logo_esenex.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de hosting rápidos y confiables para empresas y proyectos personales.">
+    <title>Esenex Hosting</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Unificada -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo_esenex.png" alt="Esenex Hosting" class="logo">
+                <span class="ms-2">Esenex Hosting</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#planes-hosting">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Sección: Preguntas Frecuentes -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
+        
+        <!-- Campo de Búsqueda -->
+        <div class="mb-4">
+            <input type="text" id="faq-search" class="form-control" placeholder="Buscar preguntas...">
+        </div>
+
+        <!-- Filtros por Temática -->
+        <div class="mb-4 text-center">
+            <button class="btn btn-outline-primary mx-1 filter-btn" data-category="general">General</button>
+            <button class="btn btn-outline-primary mx-1 filter-btn" data-category="planes">Planes</button>
+            <button class="btn btn-outline-primary mx-1 filter-btn" data-category="pagos">Pagos</button>
+            <button class="btn btn-outline-primary mx-1 filter-btn" data-category="tecnico">Soporte Técnico</button>
+        </div>
+
+        <!-- Preguntas Frecuentes -->
+        <div id="faq-list">
+            <div class="faq-item" data-category="general">
+                <h5>¿Qué es el hosting web?</h5>
+                <p>El hosting web es un servicio que permite almacenar los archivos de un sitio web para que estén disponibles en Internet.</p>
+            </div>
+
+            <div class="faq-item" data-category="planes">
+                <h5>¿Cuál es la diferencia entre los planes Start y Boost?</h5>
+                <p>El plan Boost ofrece más almacenamiento y recursos que el plan Start, ideal para sitios con más tráfico.</p>
+            </div>
+
+            <div class="faq-item" data-category="pagos">
+                <h5>¿Qué métodos de pago aceptan?</h5>
+                <p>Aceptamos pagos con tarjetas de crédito, débito y transferencias bancarias.</p>
+            </div>
+
+            <div class="faq-item" data-category="tecnico">
+                <h5>¿Cómo puedo contactar al soporte técnico?</h5>
+                <p>Puedes contactarnos a través del chat en vivo o enviando un correo a soporte@ejemplo.com.</p>
+            </div>
+
+            <div class="faq-item" data-category="general">
+                <h5>¿Ofrecen garantía de devolución de dinero?</h5>
+                <p>Sí, ofrecemos garantía de devolución de dinero dentro de los primeros 30 días.</p>
+            </div>
+
+            <div class="faq-item" data-category="planes">
+                <h5>¿Puedo cambiar de plan después de contratar uno?</h5>
+                <p>Sí, puedes actualizar o degradar tu plan en cualquier momento desde tu panel de usuario.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Esenex Hosting. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo de CSS general del sitio -->
+    <link rel="stylesheet" href="css/global/styles.css">
+    <!-- Enlace al archivo de CSS específico para FAQ -->
+    <link rel="stylesheet" href="css/global/faq.css">
+
+    <!-- Enlace al archivo de JavaScript general del sitio -->
+    <script src="js//global/scripts.js"></script>
+    <!-- Enlace al archivo de JavaScript específico para FAQ -->
+    <script src="js/global/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/+56947923313" class="whatsapp-button" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 55px; height: 55px; z-index: 1000;" data-bs-toggle="tooltip" data-bs-placement="left" title="Un agente te ayudará">
+    </a>
+
+    <!-- Botón Scroll to Top -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" style="display: none; position: fixed; bottom: 20px; right: 100px; z-index: 1000; background-color: #66b2cc; border: none; border-radius: 50%; width: 50px; height: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); color: white; font-size: 20px; cursor: pointer;">↑</button>
+
+</body>
+</html>

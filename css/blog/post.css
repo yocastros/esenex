@@ -1,0 +1,66 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Imagen del artículo */
+#post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del Artículo */
+#post-content {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Estilos generales para mantener consistencia */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+
+/* Imagen del artículo */
+#post-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del artículo */
+#post-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    background-color: #343a40;
+    color: #ffffff;
+}

@@ -1,0 +1,54 @@
+/* Estilo general para las preguntas frecuentes */
+#faq-list {
+    margin-top: 20px;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.faq-item:hover {
+    background-color: #e6f7ff;
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de filtro */
+.filter-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.filter-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Campo de búsqueda */
+#faq-search {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    transition: box-shadow 0.3s ease;
+}
+
+#faq-search:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}

@@ -1,0 +1,27 @@
+/* Estilo del contenedor del blog */
+#blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tarjetas de artículos */
+.blog-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.btn-primary {
+    background-color: #66b2cc; /* Cambia este color al que corresponde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003366; /* Color más oscuro al pasar el cursor */
+}

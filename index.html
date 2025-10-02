@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="images/logo_esenex.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de hosting rápidos y confiables para empresas y proyectos personales.">
+    <title>Esenex Hosting</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/global/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar Unificada -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo_esenex.png" alt="Esenex Hosting" class="logo">
+                <span class="ms-2">Esenex Hosting</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#planes-hosting">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-end mt-2">
+        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-secondary">Modo Oscuro</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="text-center hero-section text-white py-5">
+        <div class="container">
+            <img src="images/logo_esenex.png" alt="Esenex Hosting Logo" class="hero-logo mb-4">
+            <h1 class="display-4 fw-bold">Hosting Rápido y Confiable</h1>
+            <p class="lead">Elige el plan que mejor se adapta a tus necesidades y disfruta de la mejor tecnología.</p>
+            <a href="#planes-hosting" class="btn btn-modern btn-lg">Ver Planes</a>
+        </div>
+    </section>
+
+    <!-- Sección: ¿Por qué elegirnos? -->
+    <section id="porque-elegirnos" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">¿Por qué elegirnos?</h2>
+            <div class="row">
+                <!-- Seguridad Avanzada -->
+                <div class="col-md-3">
+                    <div class="elegirnos-card p-4">
+                        <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Seguridad Avanzada</h5>
+                        <p>Protección total con firewall, backups automáticos y monitoreo constante.</p>
+                    </div>
+                </div>
+                <!-- Soporte 24/7 -->
+                <div class="col-md-3">
+                    <div class="elegirnos-card p-4">
+                        <i class="fas fa-headset fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Soporte 24/7</h5>
+                        <p>Nuestro equipo está disponible todo el día para ayudarte en lo que necesites.</p>
+                    </div>
+                </div>
+                <!-- Escalabilidad Flexible -->
+                <div class="col-md-3">
+                    <div class="elegirnos-card p-4">
+                        <i class="fas fa-chart-line fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Escalabilidad Flexible</h5>
+                        <p>Adapta tu plan según el crecimiento de tu negocio sin complicaciones.</p>
+                    </div>
+                </div>
+                <!-- Garantía de Uptime -->
+                <div class="col-md-3">
+                    <div class="elegirnos-card p-4">
+                        <i class="fas fa-clock fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Garantía de Uptime</h5>
+                        <p>99.9% de disponibilidad para que tu sitio siempre esté en línea.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Sección: Planes de Hosting con Pestañas -->
+    <section id="planes-hosting" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Nuestros Planes</h2>
+            
+            <!-- Pestañas de Categorías -->
+            <ul class="nav nav-tabs justify-content-center mb-4" id="planesTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#basicos">Básicos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#avanzados">Avanzados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#empresariales">Empresariales</a>
+                </li>
+            </ul>
+
+            <!-- Contenido de las Pestañas -->
+            <div class="tab-content">
+                <!-- Planes Básicos -->
+                <div class="tab-pane fade show active" id="basicos">
+                    <div class="row">
+                        <!-- Plan 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card plan-card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-seedling fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 1 - Start</h5>
+                                    <p class="card-text">4 GB de almacenamiento<br>1 GB/s de velocidad<br>Correo ilimitado</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Plan 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card plan-card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-bolt fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 2 - Boost</h5>
+                                    <p class="card-text">7 GB de almacenamiento<br>1 GB/s de velocidad<br>Correo ilimitado</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Plan 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card plan-card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-arrow-up fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 3 - Advance</h5>
+                                    <p class="card-text">14 GB de almacenamiento<br>1 GB/s de velocidad<br>Correo ilimitado</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Planes Avanzados -->
+                <div class="tab-pane fade" id="avanzados">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card plan-card">
+                                <div class="card-body">
+                                    <i class="fas fa-briefcase fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 4 - Pro</h5>
+                                    <p>22 GB de almacenamiento<br>Transferencia ilimitada<br>Soporte 24/7</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card plan-card">
+                                <div class="card-body">
+                                    <i class="fas fa-battery-full fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 5 - Power</h5>
+                                    <p>31 GB de almacenamiento<br>Transferencia ilimitada<br>Soporte prioritario</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Planes Empresariales -->
+                <div class="tab-pane fade" id="empresariales">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card plan-card">
+                                <div class="card-body">
+                                    <i class="fas fa-gem fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 6 - Elite</h5>
+                                    <p>50 GB de almacenamiento<br>Transferencia ilimitada<br>Correos ilimitados</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card plan-card">
+                                <div class="card-body">
+                                    <i class="fas fa-infinity fa-3x mb-3"></i>
+                                    <h5 class="card-title">Plan 7 - Unlimited</h5>
+                                    <p>80 GB de almacenamiento<br>Transferencia ilimitada<br>Atención personalizada</p>
+                                    <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección: Nuestro Compromiso -->
+    <section id="nuestro-compromiso" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Nuestro Compromiso</h2>
+            <div class="row justify-content-center">
+                <!-- Compromiso 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="compromiso-card p-4">
+                        <i class="fas fa-lock fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Seguridad Garantizada</h5>
+                        <p>Protegemos tus datos con tecnología de punta y encriptación avanzada.</p>
+                    </div>
+                </div>
+                <!-- Compromiso 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="compromiso-card p-4">
+                        <i class="fas fa-rocket fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Rendimiento Óptimo</h5>
+                        <p>Velocidad y estabilidad incomparables para que tu sitio siempre funcione al máximo.</p>
+                    </div>
+                </div>
+                <!-- Compromiso 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="compromiso-card p-4">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Atención al Cliente</h5>
+                        <p>Un equipo dedicado listo para resolver tus dudas 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Sección: Tabla de Planes de Hosting -->
+   <section id="planes-compare" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Tabla Comparativa de Planes</h2>
+        
+        <!-- Tabla Comparativa -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Start</th>
+                        <th>Boost</th>
+                        <th>Advance</th>
+                        <th>Pro</th>
+                        <th>Power</th>
+                        <th>Elite</th>
+                        <th>Unlimited</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Almacenamiento</td><td>4 GB</td><td>7 GB</td><td>14 GB</td><td>22 GB</td><td>31 GB</td><td>50 GB</td><td>80 GB</td></tr>
+                    <tr><td>Cuentas de Email</td><td colspan="7">Ilimitadas</td></tr>
+                    <tr><td>Web Mail</td><td colspan="7">Gratis</td></tr>
+                    <tr><td>Ancho de Banda</td><td colspan="7">1 GB/s</td></tr>
+                    <tr><td>Transferencia Mensual</td><td colspan="7">Ilimitada</td></tr>
+                    <tr><td>Filtro Anti Spam</td><td>✔️</td><td></td><td>✔️</td><td>✔️</td><td></td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Antivirus</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Base de Datos MySQL</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                    <tr><td>FTP</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>cPanel</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Softaculous</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+                    <tr><td>Precio Mensual + IVA</td><td>$3.900</td><td>$5.900</td><td>$9.900</td><td>$13.990</td><td>$18.900</td><td>$28.000</td><td>$39.900</td></tr>
+                    <tr>
+                        <td></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Start', 3900)">CONTRATAR</a></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Boost', 5900)">CONTRATAR</a></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Advance', 9900)">CONTRATAR</a></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Pro', 13900)">CONTRATAR</a></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Power', 18900)">CONTRATAR</a></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Elite', 28000)">CONTRATAR</a></td>
+                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Unlimited', 39000)">CONTRATAR</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+     </div>
+    </section>
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <p class="text-center mb-4">¿Tienes dudas o necesitas ayuda? Completa el formulario y nos pondremos en contacto contigo.</p>
+            <form id="contact-form" action="send_email.php" method="POST" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                        <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+                </div>
+                <div id="form-message" class="alert" style="display: none;"></div>
+                <div class="text-center">
+                    <button type="submit" class="btn-modern">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Esenex Hosting. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/global/scripts.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/+56947923313" class="whatsapp-button" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 55px; height: 55px; z-index: 1000;" data-bs-toggle="tooltip" data-bs-placement="left" title="Un agente te ayudará">
+    </a>
+    
+    <!-- Botón Volver Arriba -->
+    <button id="scrollToTopBtn" style="display: none; position: fixed; bottom: 80px; right: 20px; z-index: 1000; background-color: #66b2cc; border: none; border-radius: 50%; width: 50px; height: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); color: white; font-size: 20px; cursor: pointer;">↑</button>
+
+    <script>
+        function guardarPlan(plan, precio) {
+            sessionStorage.setItem("plan", plan);
+            sessionStorage.setItem("precio", precio);
+        }
+    </script>
+    
+
+
+</body>
+</html>

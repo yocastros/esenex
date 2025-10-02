@@ -1,0 +1,114 @@
+/* Logo centrado */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center;
+    font-size: 2rem; /* Tamaño de fuente responsivo */
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+/* Responsividad para títulos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Formulario centrado */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Ajuste responsivo */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de campos */
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+form input, form select, form button {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botón */
+form button {
+    background-color: #66b2cc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #004c66;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    form input, form select, form button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 10px;
+    }
+
+    form input, form select, form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+}
+

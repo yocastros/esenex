@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratar Servicio</title>
+    <link href="css/global/contratacion.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="images/logo_esenex.png" alt="Esenex Hosting Logo" class="logo">
+    </div>
+    
+    <div class="form-container">
+        <h1>Contratar servicio Web Hosting</h1>
+        <form id="contratar-form">
+            <p>Plan seleccionado: <strong id="selected-plan"></strong></p>
+            <p>Precio del plan: <strong id="selected-precio"></strong></p>
+
+            <label for="rut">RUT de Facturación:</label>
+            <input type="text" id="rut" name="rut" placeholder="Ej: 12345678-K" required>
+
+            <button type="submit">Siguiente</button>
+        </form>
+    </div>
+
+    <script>
+        // Obtener los valores almacenados en sessionStorage
+        const plan = sessionStorage.getItem("plan");
+        const precio = sessionStorage.getItem("precio");
+
+        // Formatear el precio con separadores de miles
+        const precioFormateado = precio ? new Intl.NumberFormat('es-CL', { 
+            style: 'currency', 
+            currency: 'CLP', 
+            minimumFractionDigits: 0 
+        }).format(precio) : 'N/A';
+
+        // Mostrar el plan y el precio formateado en la página
+        document.getElementById('selected-plan').textContent = plan || 'N/A';
+        document.getElementById('selected-precio').textContent = precio ? `${precioFormateado} + IVA` : 'N/A';
+
+        // Capturar el evento submit del formulario para evitar envío por GET
+        document.getElementById("contratar-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe por defecto
+
+            // Obtener y guardar el RUT en sessionStorage
+            const rut = document.getElementById("rut").value;
+            sessionStorage.setItem("rut", rut);
+
+            // Redirigir a facturacion.html sin parámetros en la URL
+            window.location.href = "facturacion.html";
+        });
+    </script>
+
+    <script src="js/validar-rut.js"></script>
+</body>
+</html>
+
+
+

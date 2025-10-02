@@ -1,0 +1,1120 @@
+/* Paleta de colores basada en el diseño */
+:root {
+    --primary-color: #66b2cc; /* Azul Claro */
+    --secondary-color: #004c66; /* Azul Oscuro */
+    --text-color: #ffffff; /* Blanco */
+    --background-color: #f0f0f0; /* Gris Claro */
+}
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004b6b; /* Color de fondo del navbar */
+}
+
+.navbar.dark-mode {
+    background-color: #1f1f1f;
+}
+
+.navbar:hover {
+    background-color: #003b52;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .logo {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    position: relative;
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.hero-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+    transform: scale(1.05);
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+.btn-modern {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-modern.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.btn-modern.dark-mode:hover {
+    background-color: #444444;
+}
+
+/* Detalles del Plan */
+.plan-details-section {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.plan-details-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.plan-details-section ul {
+    text-align: left;
+}
+
+.plan-details-section ul li {
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 100px;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .plan-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* ============================= */
+/* Sección: Nuestro Compromiso   */
+/* ============================= */
+
+.compromiso-card {
+    background-color: var(--background-color); /* Color adaptable al modo oscuro */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-height: 250px; /* Altura mínima uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.compromiso-card:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.compromiso-card i {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.compromiso-card:hover i {
+    color: var(--text-color);
+}
+
+/* Ajustes específicos para el Modo Oscuro */
+body.dark-mode .compromiso-card {
+    background-color: #1f1f1f; /* Fondo más oscuro */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .compromiso-card:hover {
+    background-color: #333333; /* Fondo más claro al pasar el mouse */
+    color: #ffffff; /* Asegurar texto blanco */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Sombra más clara */
+}
+
+body.dark-mode .compromiso-card i {
+    color: #66b2cc; /* Color de íconos en modo oscuro */
+}
+
+body.dark-mode .compromiso-card:hover i {
+    color: var(--secondary-color); /* Íconos cambian a blanco al pasar el mouse */
+}
+
+/* ============================= */
+/* Sección: ¿Por qué elegirnos?  */
+/* ============================= */
+
+.elegirnos-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.elegirnos-card:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.elegirnos-card i {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.elegirnos-card:hover i {
+    color: var(--text-color);
+}
+/* Ajuste de altura uniforme para las tarjetas de ¿Por qué elegirnos? */
+.elegirnos-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-height: 250px; /* Altura mínima uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.elegirnos-card:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.elegirnos-card i {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.elegirnos-card:hover i {
+    color: var(--text-color);
+}
+/* Ajustes para el modo oscuro en las tarjetas de "¿Por qué elegirnos?" */
+body.dark-mode .elegirnos-card {
+    background-color: #1f1f1f; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra clara */
+}
+
+body.dark-mode .elegirnos-card:hover {
+    background-color: #333333; /* Fondo más claro al pasar el mouse */
+    color: #ffffff; /* Asegurar texto blanco */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Sombra más clara */
+}
+
+body.dark-mode .elegirnos-card i {
+    color: #66b2cc; /* Color de íconos en modo oscuro */
+}
+
+body.dark-mode .elegirnos-card:hover i {
+    color: var(--secondary-color); /* Íconos cambian a blanco al pasar el mouse */
+}
+
+/* ============================= */
+/* Tabla Comparativa de Planes   */
+/* ============================= */
+
+/* Ajuste general de la tabla */
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px; /* Agregado para espaciado consistente */
+}
+
+/* Efecto hover en filas */
+.table tbody tr:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Encabezado fijo al hacer scroll */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar el encabezado */
+}
+
+/* Estilo para los botones de contratación */
+.btn-modern {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-modern:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: scale(1.05); /* Efecto ligero de zoom al pasar el mouse */
+}
+
+/* ============================= */
+/* Ajustes para el Modo Oscuro   */
+/* ============================= */
+
+body.dark-mode .table {
+    background-color: #1f1f1f; /* Fondo oscuro para la tabla */
+    color: #ffffff; /* Color del texto */
+    border-color: rgba(255, 255, 255, 0.1); /* Líneas más tenues */
+}
+
+body.dark-mode .table th, 
+body.dark-mode .table td {
+    background-color: #2a2a2a; /* Fondo más oscuro para las celdas */
+    color: #ffffff;
+}
+
+body.dark-mode .table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo claro al pasar el mouse */
+    color: var(--text-color);
+}
+
+body.dark-mode .sticky-top {
+    background-color: #1f1f1f; /* Fondo del encabezado en modo oscuro */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn-modern {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-modern:hover {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+/* ============================= */
+/* Sección: Planes de Hosting con Pestañas */
+/* ============================= */
+
+/* Pestañas de Categorías */
+.nav-tabs .nav-link {
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efecto hover */
+}
+
+/* Pestaña Activa */
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--text-color) !important; /* Aseguramos que el color se mantenga */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs .nav-link.active:hover {
+    color: var(--text-color) !important; /* Evitar cambios al pasar el mouse */
+    background-color: var(--secondary-color);
+}
+
+/* Modo Oscuro */
+body.dark-mode .nav-tabs .nav-link {
+    color: var(--text-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .nav-tabs .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--text-color) !important; /* Mantener el color del texto */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .nav-tabs .nav-link.active:hover {
+    color: var(--text-color) !important; /* Mantener el color del texto al hacer hover */
+}
+
+/* Estilo de las Tarjetas */
+.plan-card {
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffff; /* Color de fondo predeterminado */
+    color: #333333; /* Color de texto predeterminado */
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-color);
+    color: var(--text-color); /* Cambiar color del texto al hover */
+}
+
+/* Botón Ver Detalles */
+.btn-contratar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contratar:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Íconos dentro de las tarjetas */
+.plan-card i {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.plan-card:hover i {
+    color: var(--text-color); /* Cambiar color del ícono en el hover */
+}
+
+/* Modo Oscuro */
+body.dark-mode .plan-card {
+    background-color: #1f1f1f; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde tenue */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra tenue */
+}
+
+body.dark-mode .plan-card:hover {
+    background-color: #333333; /* Fondo más claro al pasar el mouse */
+    color: #ffffff; /* Asegurar texto blanco */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Sombra más clara */
+}
+
+body.dark-mode .plan-card i {
+    color: #66b2cc; /* Color de íconos en modo oscuro */
+}
+
+body.dark-mode .plan-card:hover i {
+    color: var(--secondary-color); /* Íconos al hover */
+}
+
+/* Botón Ver Detalles */
+.btn-contratar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contratar:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Modo Oscuro: Botón Ver Detalles */
+body.dark-mode .btn-contratar {
+    background-color: #333333; /* Fondo más oscuro en modo oscuro */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde tenue */
+}
+
+body.dark-mode .btn-contratar:hover {
+    background-color: #444444; /* Aún más oscuro al hacer hover */
+    color: #ffffff; /* Mantener texto claro */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* Sombra tenue */
+}
+
+
+/* Adaptabilidad para móviles */
+@media (max-width: 768px) {
+    .plan-card {
+        margin-bottom: 20px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+/* ============================= */
+/* Mejora de Pestañas con Contorno */
+/* ============================= */
+
+/* Estilo general de las pestañas */
+.nav-tabs .nav-link {
+    color: #333333; /* Texto oscuro */
+    background-color: #f0f0f0; /* Fondo gris suave */
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Contorno negro */
+}
+
+/* Pestaña activa */
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    text-shadow: none; /* Sin contorno para la activa */
+}
+
+/* Hover en pestañas inactivas */
+.nav-tabs .nav-link:hover {
+    background-color: #e0e0e0;
+    color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Efecto hover para las filas de la tabla comparativa */
+.plan-table tbody tr:hover {
+    background-color: #f0f8ff; /* Suave tono azul claro */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.01); /* Ligera elevación */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+/* Ajustar la tabla comparativa para que se adapte al ancho */
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Ajustar el tamaño de las celdas y el texto */
+.plan-table {
+    width: 99%;
+    table-layout: fixed; /* Asegura que todas las columnas tengan el mismo ancho */
+    border-collapse: collapse;
+}
+
+/* Ajuste de columnas para que se distribuyan de manera uniforme */
+.plan-table th, .plan-table td {
+    padding: 10px;
+    font-size: 14px; /* Reducir el tamaño del texto */
+    word-wrap: break-word; /* Permitir que el texto se ajuste dentro de las celdas */
+}
+
+/* Ajustar el tamaño de los botones */
+.btn-contratar {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Ajustar el efecto hover para filas */
+.plan-table tbody tr:hover {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para botones de navegación */
+.btn-modern {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la navbar */
+.navbar {
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #003b52;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Estilo para tarjetas del blog con tamaño uniforme */
+.card {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.btn-modern {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Estilo para la imagen de las tarjetas */
+.blog-img {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Estilo uniforme para las tarjetas */
+.plan-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Color de fondo similar a las cajas de abajo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+/* Hover para las tarjetas */
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Íconos dentro de las tarjetas */
+.plan-card i {
+    color: #66b2cc; /* Color corporativo */
+    margin-bottom: 10px;
+}
+
+/* Botón estilizado */
+.btn-contratar {
+    background-color: #66b2cc; /* Color corporativo */
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-contratar:hover {
+    background-color: #66b2cc; /* Color corporativo más oscuro */
+    color: white;
+}
+/* Estilo para las imágenes dentro de las tarjetas */
+.blog-card img {
+    margin-bottom: 0px; /* Añade espacio entre la imagen y el texto */
+    border-radius: 10px; /* Redondeo opcional para las esquinas */
+    object-fit: cover; /* Ajusta la imagen para que se vea bien en su contenedor */
+    width: 100%;
+    max-height: 300px; /* Ajusta la altura máxima de la imagen */
+}
+
+/* Espaciado adicional entre elementos en la tarjeta */
+.blog-card .card-title {
+    margin-top: 0px; /* Añade espacio encima del título */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+    font-size: 1.25rem; /* Tamaño del texto del título */
+    font-weight: bold;
+}
+
+.blog-card .card-text {
+    margin-bottom: 15px; /* Añade espacio debajo del texto */
+    font-size: 0.95rem; /* Ajusta el tamaño del texto */
+    color: #666; /* Color del texto para mayor legibilidad */
+}
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+}
+.site-header a {
+    color: white;
+    text-decoration: none;
+}
+.site-footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+/* Header */
+header {
+    background-color: #004b6b; /* O el color de fondo que uses */
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    max-height: 50px; /* Ajusta según tu necesidad */
+    margin-right: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white; /* Ajusta según tu diseño */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004b6b; /* Color de fondo del navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    max-height: 50px; /* Tamaño máximo del logo */
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Color de los enlaces */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Para dispositivos pequeños: estilo del botón toggler */
+.navbar-toggler {
+    display: none; /* Ocultar botón toggler por defecto */
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block; /* Mostrar el botón toggler en dispositivos pequeños */
+    }
+
+    .collapse {
+        display: none; /* Ocultar el menú desplegable */
+    }
+
+    .collapse.show {
+        display: block; /* Mostrar el menú cuando está activo */
+    }
+}
+
+#contacto {
+    background-color: var(--background-color);
+    padding: 50px 15px;
+}
+
+#contacto h2 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+form .btn-modern {
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.btn-modern {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-modern:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+/* Centrar el logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Centrar el formulario */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de campos de texto */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+/* ============================= */
+/* Ajustes para el Modo Oscuro en el Formulario de Contacto */
+/* ============================= */
+
+body.dark-mode #contacto {
+    background-color: #1f1f1f; /* Fondo más oscuro */
+    color: #ffffff; /* Texto claro */
+}
+
+body.dark-mode #contacto h2 {
+    color: #66b2cc; /* Azul claro */
+}
+
+body.dark-mode #contacto p {
+    color: #cccccc; /* Texto gris claro */
+}
+
+body.dark-mode form .form-control {
+    background-color: #2a2a2a; /* Fondo de los campos de texto */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid #444444; /* Borde oscuro */
+}
+
+body.dark-mode form .form-control:focus {
+    border-color: #66b2cc; /* Azul claro */
+    box-shadow: 0 0 5px rgba(102, 178, 204, 0.5); /* Resplandor suave */
+}
+
+body.dark-mode .form-container {
+    background: #2a2a2a; /* Fondo oscuro */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra tenue */
+}
+
+body.dark-mode form button {
+    background-color: #333333; /* Fondo del botón en modo oscuro */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid #444444; /* Borde tenue */
+}
+
+body.dark-mode form button:hover {
+    background-color: #444444; /* Fondo más claro al pasar el mouse */
+    color: #ffffff; /* Texto claro */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* Sombra tenue */
+}
+
+body.dark-mode .alert-success {
+    background-color: #155724; /* Verde oscuro */
+    color: #d4edda; /* Texto verde claro */
+}
+
+body.dark-mode .alert-danger {
+    background-color: #721c24; /* Rojo oscuro */
+    color: #f8d7da; /* Texto rojo claro */
+}
+
+body.dark-mode .alert-warning {
+    background-color: #856404; /* Amarillo oscuro */
+    color: #fff3cd; /* Texto amarillo claro */
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--primary-color); /* Color principal */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--secondary-color); /* Color secundario al hover */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+
