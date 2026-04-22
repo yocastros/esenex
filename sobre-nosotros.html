@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="images/logo_esenex.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83Q835LHVR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-83Q835LHVR');
+    </script>
+    <!-- Fin Google Analytics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Sobre Nosotros - Esenex Hosting | Empresa de Hosting en España</title>
+    <meta name="description" content="Esenex Hosting: desde 2017 ofreciendo soluciones de hosting profesional en España. Precios competitivos, soporte rápido y desarrollo a medida desde Girona.">
+    <meta name="keywords" content="empresa hosting españa, hosting girona, sobre esenex, equipo hosting profesional">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sobre Nosotros - Esenex Hosting">
+    <meta property="og:description" content="Empresa de hosting profesional con más de 8 años de experiencia, operando desde Girona, España.">
+    <meta property="og:url" content="https://esenex.es/sobre-nosotros.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://esenex.es/images/logo_esenex.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://esenex.es/sobre-nosotros.html">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83Q835LHVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-83Q835LHVR');
+    </script>
+    
+    <!-- Bootstrap & Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/global/styles.css" rel="stylesheet">
+    
+    <style>
+        .hero-about {
+            background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%);
+            color: white;
+            padding: 80px 0 60px 0;
+            margin-bottom: 60px;
+        }
+        .hero-about h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero-about .lead {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c5282;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #66b2cc;
+        }
+        .value-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .value-card i {
+            font-size: 42px;
+            color: #66b2cc;
+            margin-bottom: 20px;
+        }
+        .value-card h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+        .value-card p {
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .timeline-year {
+            font-size: 24px;
+            font-weight: 700;
+            color: #66b2cc;
+            min-width: 100px;
+        }
+        .timeline-content {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #66b2cc;
+        }
+        .timeline-content h5 {
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        .stats-section {
+            background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+            color: white;
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+        }
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #66b2cc;
+            margin-bottom: 10px;
+        }
+        .stat-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .cta-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .cta-section h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2c5282;
+        }
+        .btn-cta {
+            background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%);
+            color: white;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 178, 204, 0.4);
+            color: white;
+        }
+    </style>
+    
+    <!-- Schema.org - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Esenex Hosting",
+      "description": "Empresa de hosting profesional con sede en Girona, España, ofreciendo soluciones de alojamiento web desde 2017",
+      "url": "https://esenex.es",
+      "logo": "https://esenex.es/images/logo_esenex.png",
+      "foundingDate": "2017",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Girona",
+        "addressCountry": "ES"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34-697-764-254",
+        "contactType": "customer service",
+        "email": "ventas@esenex.es",
+        "availableLanguage": ["es"]
+      },
+      "sameAs": []
+    }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo_esenex.png" alt="Esenex Hosting" class="logo" style="max-height: 40px;">
+                <span class="ms-2">Esenex Hosting</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#planes-hosting">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-about">
+        <div class="container text-center">
+            <h1>Sobre Esenex Hosting</h1>
+            <p class="lead">Más de 8 años impulsando proyectos digitales con soluciones de hosting profesional</p>
+        </div>
+    </section>
+
+    <!-- Nuestra Historia -->
+    <section class="container my-5">
+        <h2 class="section-title">Nuestra Historia</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p style="font-size: 18px; line-height: 1.8; color: #4a5568;">
+                    Esenex nació en <strong>2017 en Chile</strong> con una visión clara: ofrecer soluciones de hosting que combinaran <strong>calidad, velocidad y precios competitivos</strong>. Desde nuestros inicios, nos enfocamos en brindar un servicio excepcional respaldado por un equipo de profesionales con amplia experiencia en el sector tecnológico.
+                </p>
+                <p style="font-size: 18px; line-height: 1.8; color: #4a5568;">
+                    En 2025, expandimos nuestras operaciones a <strong>España</strong>, estableciendo nuestra sede en la <strong>provincia de Girona</strong>, desde donde atendemos a clientes de todo el territorio español y más allá. Esta expansión nos permite estar más cerca de nuestros clientes europeos y ofrecer un soporte aún más ágil y personalizado.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-content">
+                            <h5>Fundación en Chile</h5>
+                            <p>Inicio de operaciones ofreciendo hosting profesional en Latinoamérica</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">
+                            <h5>Expansión a España</h5>
+                            <p>Apertura de operaciones en Girona para servir al mercado europeo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime Garantizado</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Soporte Disponible</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Clientes Satisfechos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+    <section class="container my-5">
+        <h2 class="section-title">¿Qué nos diferencia?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="value-card">
+                    <i class="fas fa-tags"></i>
+                    <h4>Precios Competitivos</h4>
+                    <p>Ofrecemos planes de hosting con la mejor relación calidad-precio del mercado, sin comprometer la calidad del servicio.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Soporte Muy Rápido</h4>
+                    <p>Nuestro equipo técnico está disponible 24/7 para resolver cualquier incidencia en tiempo récord. Tu tiempo es valioso.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="value-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Área de Desarrollo</h4>
+                    <p>Contamos con un equipo de desarrollo que puede ayudarte a escalar tus soluciones y crear aplicaciones a medida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="container my-5">
+        <h2 class="section-title">Nuestro Equipo</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <p style="font-size: 18px; line-height: 1.8; color: #4a5568;">
+                    Detrás de Esenex hay un <strong>equipo de profesionales altamente cualificados</strong> con amplia experiencia en tecnologías web, administración de sistemas, desarrollo de software y atención al cliente.
+                </p>
+                <p style="font-size: 18px; line-height: 1.8; color: #4a5568;">
+                    Nuestro compromiso es simple: <strong>entender las necesidades de cada cliente</strong> y ofrecer soluciones personalizadas que impulsen su éxito digital. No somos solo un proveedor de hosting, somos tu <strong>socio tecnológico</strong>.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Expertos en Infraestructura</h5>
+                                <p class="text-muted">Especialistas en servidores, seguridad y optimización</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Desarrolladores</h5>
+                                <p class="text-muted">Equipo de desarrollo para soluciones a medida</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Soporte Técnico</h5>
+                                <p class="text-muted">Disponible 24/7 para resolver tus dudas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-check-circle fa-2x text-success me-3"></i>
+                            <div>
+                                <h5 class="mb-1">Atención Personalizada</h5>
+                                <p class="text-muted">Cada cliente es único y merece atención dedicada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="value-card" style="background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%); color: white;">
+                    <i class="fas fa-users" style="color: white;"></i>
+                    <h4 style="color: white;">¿Por qué elegirnos?</h4>
+                    <ul style="text-align: left; line-height: 2;">
+                        <li>8+ años de experiencia</li>
+                        <li>Precios sin competencia</li>
+                        <li>Soporte ultra rápido</li>
+                        <li>Desarrollo a medida</li>
+                        <li>Tecnología de punta</li>
+                        <li>Presencia en 2 continentes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <div class="container">
+            <h3>¿Listo para empezar tu proyecto?</h3>
+            <p style="font-size: 18px; color: #4a5568; margin-bottom: 30px;">
+                Únete a cientos de clientes satisfechos que confían en Esenex para su hosting
+            </p>
+            <a href="index.html#planes-hosting" class="btn-cta">Ver Nuestros Planes</a>
+            <a href="index.html#contacto" class="btn-cta" style="background: white; color: #66b2cc; border: 2px solid #66b2cc; margin-left: 15px;">Contactar</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Esenex Hosting. Todos los derechos reservados.</p>
+            <p class="mb-0">
+                <a href="index.html" class="text-white me-3">Inicio</a>
+                <a href="sobre-nosotros.html" class="text-white me-3">Sobre Nosotros</a>
+                <a href="index.html#contacto" class="text-white">Contacto</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

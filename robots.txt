@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Bloquear carpetas innecesarias
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+# Permitir específicamente páginas importantes
+Allow: /index.html
+Allow: /contratar_unificado.html
+Allow: /faq.html
+
+# Sitemap
+Sitemap: https://esenex.es/sitemap.xml

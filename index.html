@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta tags básicos -->
     <link rel="icon" href="images/logo_esenex.ico" type="image/x-icon">
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83Q835LHVR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-83Q835LHVR');
+    </script>
+    <!-- Fin Google Analytics -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicios de hosting rápidos y confiables para empresas y proyectos personales.">
-    <title>Esenex Hosting</title>
-    <!-- Bootstrap CSS -->
+    
+    <!-- SEO - Title optimizado (50-60 caracteres) -->
+    <title>Hosting Barato España | Esenex Hosting desde 3,90€/mes</title>
+    
+    <!-- SEO - Meta Description (150-160 caracteres) -->
+    <meta name="description" content="Hosting web profesional en España desde 3,90€/mes. Activación inmediata, cPanel, SSL gratis y soporte 24/7. Ideal para autónomos y pequeñas empresas.">
+    
+    <!-- SEO - Keywords (menos importante pero ayuda) -->
+    <meta name="keywords" content="hosting españa, hosting barato, hosting wordpress españa, hosting económico, hosting email profesional, cpanel hosting, hosting autónomos">
+    
+    <!-- SEO - Información del autor/empresa -->
+    <meta name="author" content="Esenex Hosting">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL (evita contenido duplicado) -->
+    <link rel="canonical" href="https://esenex.es/">
+    
+    <!-- Open Graph - Facebook, LinkedIn, WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hosting Barato España | Esenex Hosting desde 3,90€/mes">
+    <meta property="og:description" content="Hosting web profesional en España. Activación inmediata, cPanel, SSL gratis y soporte 24/7.">
+    <meta property="og:url" content="https://esenex.es/">
+    <meta property="og:image" content="https://esenex.es/images/logo_esenex.png">
+    <meta property="og:site_name" content="Esenex Hosting">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hosting Barato España | Esenex Hosting desde 3,90€/mes">
+    <meta name="twitter:description" content="Hosting web profesional en España. Activación inmediata, cPanel, SSL gratis.">
+    <meta name="twitter:image" content="https://esenex.es/images/logo_esenex.png">
+    
+    <!-- Geo tags - Ubicación -->
+    <meta name="geo.region" content="ES">
+    <meta name="geo.placename" content="España">
+    
+    <!-- Resto del head actual... -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="css/global/styles.css" rel="stylesheet">
+    
+    <!-- Google Analytics (lo añadiremos después) -->
+    <!-- Google Tag Manager se añadirá aquí -->
+    
+    <!-- Schema.org - Datos Estructurados para Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebHostingService",
+        "name": "Esenex Hosting",
+        "description": "Servicio de hosting web profesional en España con cPanel, SSL gratis y soporte 24/7",
+        "url": "https://esenex.es",
+        "logo": "https://esenex.es/images/logo_esenex.png",
+        "image": "https://esenex.es/images/logo_esenex.png",
+        "telephone": "+34-697-764-254",
+        "email": "ventas@esenex.es",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ES",
+            "addressLocality": "España"
+        },
+        "priceRange": "€€",
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "EUR",
+            "lowPrice": "3.90",
+            "highPrice": "39.90",
+            "offerCount": "7"
+        }
+    }
+    </script>
 
 </head>
 <body>
@@ -27,9 +103,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#planes-hosting">Planes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                    <!--<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="politica-privacidad.html">Política de Privacidad</a></li>
                 </ul>
             </div>
         </div>
@@ -42,9 +120,10 @@
     <!-- Hero Section -->
     <section class="text-center hero-section text-white py-5">
         <div class="container">
-            <img src="images/logo_esenex.png" alt="Esenex Hosting Logo" class="hero-logo mb-4">
-            <h1 class="display-4 fw-bold">Hosting Rápido y Confiable</h1>
-            <p class="lead">Elige el plan que mejor se adapta a tus necesidades y disfruta de la mejor tecnología.</p>
+            <img src="images/logo_esenex.png" alt="Esenex Hosting - Hosting Web Profesional España" class="hero-logo mb-4">
+            <h1 class="display-4 fw-bold">Hosting Web Profesional en España</h1>
+            <!-- AÑADIR ESTA LÍNEA (ayuda SEO con keywords secundarias) -->
+            <p class="lead">Planes desde 3,90€/mes con cPanel, SSL gratis, activación inmediata y soporte 24/7</p>
             <a href="#planes-hosting" class="btn btn-modern btn-lg">Ver Planes</a>
         </div>
     </section>
@@ -73,9 +152,9 @@
                 <!-- Escalabilidad Flexible -->
                 <div class="col-md-3">
                     <div class="elegirnos-card p-4">
-                        <i class="fas fa-chart-line fa-3x mb-3"></i>
-                        <h5 class="fw-bold">Escalabilidad Flexible</h5>
-                        <p>Adapta tu plan según el crecimiento de tu negocio sin complicaciones.</p>
+                        <i class="fas fa-rocket fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Activación Inmediata</h5>
+                        <p>Tu hosting estará listo en menos de 5 minutos tras el pago.</p>
                     </div>
                 </div>
                 <!-- Garantía de Uptime -->
@@ -276,22 +355,161 @@
                     <tr><td>FTP</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
                     <tr><td>cPanel</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
                     <tr><td>Softaculous</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
-                    <tr><td>Precio Mensual + IVA</td><td>$3.900</td><td>$5.900</td><td>$9.900</td><td>$13.990</td><td>$18.900</td><td>$28.000</td><td>$39.900</td></tr>
+                    <tr><td>Precio Mensual + IVA</td><td>€3,90</td><td>€5,90</td><td>€9,90</td><td>€13,99</td><td>€18,90</td><td>€28,00</td><td>€39,90</td></tr>
                     <tr>
                         <td></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Start', 3900)">CONTRATAR</a></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Boost', 5900)">CONTRATAR</a></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Advance', 9900)">CONTRATAR</a></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Pro', 13900)">CONTRATAR</a></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Power', 18900)">CONTRATAR</a></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Elite', 28000)">CONTRATAR</a></td>
-                        <td><a href="contratar.html" class="btn-modern" onclick="guardarPlan('Unlimited', 39000)">CONTRATAR</a></td>
+                        <td><button onclick="contratarPlan('Start', 3.90)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
+                        <td><button onclick="contratarPlan('Boost', 5.90)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
+                        <td><button onclick="contratarPlan('Advance', 9.90)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
+                        <td><button onclick="contratarPlan('Pro', 13.99)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
+                        <td><button onclick="contratarPlan('Power', 18.90)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
+                        <td><button onclick="contratarPlan('Elite', 28.00)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
+                        <td><button onclick="contratarPlan('Unlimited', 39.90)" class="btn-modern" style="cursor: pointer;">CONTRATAR</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
      </div>
     </section>
+
+    <!-- Sección: Preguntas Frecuentes -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
+            
+            <!-- Campo de Búsqueda -->
+            <div class="mb-4">
+                <input type="text" id="faq-search" class="form-control" placeholder="Buscar preguntas...">
+            </div>
+
+            <!-- Filtros por Temática -->
+            <div class="mb-4 text-center">
+                <button class="btn btn-outline-primary mx-1 filter-btn active" data-category="all">Todas</button>
+                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="general">General</button>
+                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="planes">Planes</button>
+                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="pagos">Pagos</button>
+                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="tecnico">Soporte Técnico</button>
+            </div>
+
+            <!-- Preguntas Frecuentes -->
+            <div id="faq-list">
+                <!-- General -->
+                <div class="faq-item" data-category="general">
+                    <h5>¿Qué es el hosting web?</h5>
+                    <p>El hosting web es un servicio que permite almacenar los archivos de un sitio web para que estén disponibles en Internet.</p>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <h5>¿Ofrecen garantía de devolución de dinero?</h5>
+                    <p>Sí, ofrecemos garantía de devolución de dinero dentro de los primeros 30 días si no estás satisfecho con nuestro servicio.</p>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <h5>¿Cuánto tiempo tarda en activarse mi hosting?</h5>
+                    <p>La activación es inmediata una vez confirmado el pago. Tu sitio estará listo en cuestión de minutos.</p>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <h5>¿Puedo transferir mi dominio existente?</h5>
+                    <p>Sí, puedes transferir tu dominio desde otro proveedor. Nuestro equipo te guiará durante todo el proceso sin costo adicional.</p>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <h5>¿Es necesario tener conocimientos técnicos?</h5>
+                    <p>No es necesario. Nuestro panel de control cPanel es muy intuitivo y fácil de usar. Además, contamos con tutoriales y soporte para ayudarte.</p>
+                </div>
+
+                <!-- Planes -->
+                <div class="faq-item" data-category="planes">
+                    <h5>¿Cuál es la diferencia entre los planes Start y Boost?</h5>
+                    <p>El plan Boost ofrece más almacenamiento (7 GB vs 4 GB) y recursos adicionales, ideal para sitios con más tráfico y contenido.</p>
+                </div>
+
+                <div class="faq-item" data-category="planes">
+                    <h5>¿Puedo cambiar de plan después de contratar uno?</h5>
+                    <p>Sí, puedes actualizar o degradar tu plan en cualquier momento desde tu panel de usuario sin perder ningún dato.</p>
+                </div>
+
+                <div class="faq-item" data-category="planes">
+                    <h5>¿Cuál plan me recomiendan para un sitio de comercio electrónico?</h5>
+                    <p>Para tiendas online recomendamos los planes Pro o superiores, ya que ofrecen más recursos, bases de datos y mejor rendimiento para manejar transacciones.</p>
+                </div>
+
+                <div class="faq-item" data-category="planes">
+                    <h5>¿Hay límite de tráfico en los planes?</h5>
+                    <p>No, todos nuestros planes incluyen transferencia mensual ilimitada para que no te preocupes por el tráfico de tu sitio.</p>
+                </div>
+
+                <div class="faq-item" data-category="planes">
+                    <h5>¿Puedo hospedar múltiples sitios web en un solo plan?</h5>
+                    <p>Depende del plan. Los planes Pro, Power, Elite y Unlimited permiten hospedar múltiples dominios y sitios web.</p>
+                </div>
+
+                <!-- Pagos -->
+                <div class="faq-item" data-category="pagos">
+                    <h5>¿Qué métodos de pago aceptan?</h5>
+                    <p>Aceptamos pagos con tarjetas de crédito, débito, transferencias bancarias y PayPal para tu conveniencia.</p>
+                </div>
+
+                <div class="faq-item" data-category="pagos">
+                    <h5>¿Los precios incluyen IVA?</h5>
+                    <p>Los precios mostrados no incluyen IVA. El impuesto se añadirá al finalizar la compra según la legislación vigente.</p>
+                </div>
+
+                <div class="faq-item" data-category="pagos">
+                    <h5>¿Puedo pagar anualmente y obtener descuento?</h5>
+                    <p>Sí, ofrecemos descuentos especiales para pagos anuales. Contacta con nuestro equipo de ventas para conocer las promociones vigentes.</p>
+                </div>
+
+                <div class="faq-item" data-category="pagos">
+                    <h5>¿Qué pasa si no renuevo mi plan a tiempo?</h5>
+                    <p>Tu cuenta entra en periodo de gracia por 7 días. Pasado ese tiempo, los datos se suspenden temporalmente pero pueden recuperarse contactando a soporte.</p>
+                </div>
+
+                <div class="faq-item" data-category="pagos">
+                    <h5>¿Hay costos ocultos o cargos adicionales?</h5>
+                    <p>No, no hay costos ocultos. El precio que ves es el que pagas. Los únicos cargos adicionales son por servicios extra que elijas contratar.</p>
+                </div>
+
+                <!-- Soporte Técnico -->
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Cómo puedo contactar al soporte técnico?</h5>
+                    <p>Puedes contactarnos a través del chat en vivo, enviando un correo a soporte@esenex.com o mediante nuestro formulario de contacto.</p>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Realizan backups de mi sitio web?</h5>
+                    <p>Sí, realizamos backups automáticos semanales de todos los sitios. También puedes crear backups manuales desde tu cPanel cuando lo necesites.</p>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Incluyen certificado SSL?</h5>
+                    <p>Sí, todos nuestros planes incluyen certificado SSL gratuito de Let's Encrypt para proteger la información de tus visitantes.</p>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Qué versiones de PHP soportan?</h5>
+                    <p>Soportamos múltiples versiones de PHP (desde 7.4 hasta la 8.3) y puedes cambiar entre ellas fácilmente desde tu cPanel.</p>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Puedo instalar WordPress u otros CMS?</h5>
+                    <p>Sí, incluimos Softaculous que te permite instalar WordPress, Joomla, Drupal y más de 400 aplicaciones con un solo clic.</p>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Tienen protección contra malware?</h5>
+                    <p>Sí, todos nuestros servidores cuentan con protección antivirus y anti-malware que escanea archivos automáticamente.</p>
+                </div>
+
+                <div class="faq-item" data-category="tecnico">
+                    <h5>¿Cómo accedo a mi correo electrónico?</h5>
+                    <p>Puedes acceder a tu correo a través de WebMail desde cualquier navegador, o configurarlo en aplicaciones como Outlook, Thunderbird o en tu dispositivo móvil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contacto" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contáctanos</h2>
@@ -322,10 +540,53 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Esenex Hosting. Todos los derechos reservados.</p>
+    <!-- Footer Mejorado -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Sobre Esenex -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Esenex Hosting</h5>
+                    <p>Soluciones de hosting profesional desde 2017. Calidad, velocidad y soporte excepcional.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://wa.me/34697764254" class="text-white me-3" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
+                        <li class="mb-2"><a href="index.html#planes-hosting" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Planes</a></li>
+                        <li class="mb-2"><a href="sobre-nosotros.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Sobre Nosotros</a></li>
+                        <li class="mb-2"><a href="index.html#faq" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>FAQ</a></li>
+                        <li class="mb-2"><a href="index.html#contacto" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal y Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="politica-privacidad.html" class="text-white" style="text-decoration: none;"><i class="fas fa-shield-alt me-2"></i>Política de Privacidad</a></li>
+                    </ul>
+                    <h5 class="mb-3 mt-4">Contacto</h5>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i><a href="mailto:ventas@esenex.es" class="text-white" style="text-decoration: none;">ventas@esenex.es</a></p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+34 697 764 254</p>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>Girona, España</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2026 Esenex Hosting. Todos los derechos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -333,7 +594,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/+56947923313" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/+34697764254" class="whatsapp-button" target="_blank">
         <img src="images/whatsapp-icon.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 55px; height: 55px; z-index: 1000;" data-bs-toggle="tooltip" data-bs-placement="left" title="Un agente te ayudará">
     </a>
     
@@ -344,10 +605,70 @@
         function guardarPlan(plan, precio) {
             sessionStorage.setItem("plan", plan);
             sessionStorage.setItem("precio", precio);
+            return true;
         }
     </script>
     
+    <!-- JavaScript para el filtro de FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('faq-search');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            // Función para filtrar preguntas
+            function filterFAQs() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('h5').textContent.toLowerCase();
+                    const answer = item.querySelector('p').textContent.toLowerCase();
+                    const category = item.dataset.category;
+                    
+                    // Verificar si coincide con la búsqueda
+                    const matchesSearch = question.includes(searchTerm) || answer.includes(searchTerm);
+                    
+                    // Verificar si coincide con la categoría
+                    const matchesCategory = activeCategory === 'all' || category === activeCategory;
+                    
+                    // Mostrar u ocultar según los filtros
+                    if (matchesSearch && matchesCategory) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Evento de búsqueda
+            searchInput.addEventListener('input', filterFAQs);
+            
+            // Eventos de botones de filtro
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+                    // Aplicar filtro
+                    filterFAQs();
+                });
+            });
+        });
+    </script>
 
+    <!-- funcion ccontratar plan -->
+    <script>
+        function contratarPlan(plan, precio) {
+            // Guardar datos en sessionStorage
+            sessionStorage.setItem("plan", plan);
+            sessionStorage.setItem("precio", precio);
+    
+            // Redirigir al formulario unificado
+            window.location.href = "contratar_unificado.html";
+        }
+    </script>
 
 </body>
 </html>

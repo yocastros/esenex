@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="images/logo_esenex.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos de Facturación - Esenex Hosting</title>
@@ -136,9 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'documento' => $_POST['documento'] ?? '',
         'tipo_cliente' => $_POST['tipo_cliente'] ?? ''
     ];
-
-    // Guardar en sessionStorage vía JavaScript
-    $datos_json = json_encode($datos_editar);
 }
 ?>
 <body>

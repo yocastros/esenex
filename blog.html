@@ -1,32 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" href="images/logo_esenex.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog de Esenex Hosting: Artículos sobre tecnología, hosting y tendencias digitales.">
-    <title>Blog - Esenex Hosting</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Blog de Hosting | Guías, Tutoriales y Consejos - Esenex Hosting</title>
+    <meta name="description" content="Blog de Esenex Hosting: guías completas, tutoriales, consejos y mejores prácticas sobre hosting web, WordPress, seguridad y optimización en España.">
+    <meta name="keywords" content="blog hosting, tutoriales hosting, guías wordpress, consejos hosting españa, optimización web">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://esenex.es/blog.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog de Hosting - Esenex Hosting">
+    <meta property="og:description" content="Guías y consejos sobre hosting, WordPress y optimización web">
+    <meta property="og:url" content="https://esenex.es/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://esenex.es/images/logo_esenex.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83Q835LHVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-83Q835LHVR');
+    </script>
+    
+    <!-- Bootstrap & Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/global/styles.css">
-    <link rel="stylesheet" href="css/blog/blog.css">
-    <script src="js/global/scripts.js" defer></script>
-    <script src="js/blog/cargar_articulos.js" defer></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/global/styles.css" rel="stylesheet">
+    
+    <style>
+        .hero-blog {
+            background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%);
+            color: white;
+            padding: 80px 0 60px 0;
+            margin-bottom: 60px;
+        }
+        .hero-blog h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero-blog .lead {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .blog-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blog-card-img i {
+            font-size: 64px;
+            color: white;
+        }
+        .blog-card-body {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-category {
+            display: inline-block;
+            background: #66b2cc;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .blog-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c5282;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .blog-card-excerpt {
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: #718096;
+        }
+        .blog-meta i {
+            margin-right: 5px;
+        }
+        .btn-read-more {
+            background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        .btn-read-more:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c5282;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .featured-post {
+            background: linear-gradient(135deg, rgba(102, 178, 204, 0.1) 0%, rgba(74, 144, 164, 0.1) 100%);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+        .featured-badge {
+            background: #f6e05e;
+            color: #744210;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar Unificada -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/logo_esenex.png" alt="Esenex Hosting" class="logo">
+                <img src="images/logo_esenex.png" alt="Esenex Hosting" class="logo" style="max-height: 40px;">
                 <span class="ms-2">Esenex Hosting</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#planes-hosting">Planes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -34,32 +184,154 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="text-center hero-section text-white py-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Nuestro Blog</h1>
-            <p class="lead">Noticias, tendencias y consejos sobre hosting y tecnología.</p>
+    <section class="hero-blog">
+        <div class="container text-center">
+            <h1><i class="fas fa-newspaper"></i> Blog de Esenex</h1>
+            <p class="lead">Guías, tutoriales y consejos sobre hosting, WordPress y desarrollo web</p>
         </div>
     </section>
 
-    <!-- Sección de Artículos del Blog -->
-    <section class="py-5">
-        <div class="container">
-        <h2 class="text-center mb-4 fw-bold">Últimos Artículos</h2>
-        <div id="blog-container" class="row">
-            <!-- Contenido dinámico cargado desde la API de WordPress -->
+    <!-- Artículo Destacado -->
+    <div class="container">
+        <div class="featured-post">
+            <span class="featured-badge"><i class="fas fa-star"></i> Artículo Destacado</span>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3" style="color: #2c5282; font-size: 32px; font-weight: 700;">
+                        Cómo Elegir el Mejor Hosting para tu Negocio en España 2026
+                    </h2>
+                    <p style="font-size: 18px; color: #4a5568; line-height: 1.7;">
+                        Guía completa para tomar la decisión correcta al contratar hosting web. 
+                        Descubre qué características debes priorizar, qué errores evitar y cómo 
+                        elegir el plan perfecto según tus necesidades.
+                    </p>
+                    <div class="mt-4">
+                        <a href="blog/elegir-mejor-hosting-espana-2026.html" class="btn-read-more">
+                            <i class="fas fa-book-open"></i> Leer artículo completo
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                    <div style="background: linear-gradient(135deg, #66b2cc 0%, #4a90a4 100%); 
+                                border-radius: 12px; padding: 60px 20px;">
+                        <i class="fas fa-server" style="font-size: 80px; color: white;"></i>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Grid de Artículos -->
+        <h2 class="section-title">Últimos Artículos</h2>
+        
+        <div class="row g-4 mb-5">
+            <!-- Artículo 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="blog-card-img">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-category">Guías</span>
+                        <h3 class="blog-card-title">Cómo Elegir el Mejor Hosting para tu Negocio en España 2026</h3>
+                        <p class="blog-card-excerpt">
+                            Guía completa con todo lo que necesitas saber para tomar la mejor decisión al contratar hosting web en España.
+                        </p>
+                        <a href="blog/elegir-mejor-hosting-espana-2026.html" class="btn-read-more">
+                            Leer más <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 21 Abr 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Próximos artículos irán aquí -->
+            <div class="col-md-6 col-lg-4">
+                <div class="blog-card" style="opacity: 0.6;">
+                    <div class="blog-card-img">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-category">Tutoriales</span>
+                        <h3 class="blog-card-title">Cómo Instalar WordPress en 5 Minutos</h3>
+                        <p class="blog-card-excerpt">
+                            Aprende a instalar WordPress paso a paso en tu hosting. Tutorial completo para principiantes.
+                        </p>
+                        <span class="btn-read-more" style="opacity: 0.5; cursor: not-allowed;">
+                            Próximamente <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="blog-card" style="opacity: 0.6;">
+                    <div class="blog-card-img">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-category">Optimización</span>
+                        <h3 class="blog-card-title">10 Trucos para Acelerar tu Sitio Web</h3>
+                        <p class="blog-card-excerpt">
+                            Descubre las mejores técnicas para mejorar la velocidad de carga de tu página web.
+                        </p>
+                        <span class="btn-read-more" style="opacity: 0.5; cursor: not-allowed;">
+                            Próximamente <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 Esenex Hosting. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Esenex Hosting</h5>
+                    <p>Soluciones de hosting profesional desde 2017. Calidad, velocidad y soporte excepcional.</p>
+                    <div class="social-links mt-3">
+                        <a href="https://wa.me/34697764254" class="text-white me-3" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
+                        <li class="mb-2"><a href="index.html#planes-hosting" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Planes</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Blog</a></li>
+                        <li class="mb-2"><a href="sobre-nosotros.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Sobre Nosotros</a></li>
+                        <li class="mb-2"><a href="index.html#contacto" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="politica-privacidad.html" class="text-white" style="text-decoration: none;"><i class="fas fa-shield-alt me-2"></i>Política de Privacidad</a></li>
+                    </ul>
+                    <h5 class="mb-3 mt-4">Contacto</h5>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i><a href="mailto:ventas@esenex.es" class="text-white" style="text-decoration: none;">ventas@esenex.es</a></p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+34 697 764 254</p>
+                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>Girona, España</p>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2026 Esenex Hosting. Todos los derechos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 </html>
