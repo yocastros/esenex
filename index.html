@@ -19,10 +19,10 @@
     <title>Hosting Barato España | Esenex Hosting desde 3,90€/mes</title>
     
     <!-- SEO - Meta Description (150-160 caracteres) -->
-    <meta name="description" content="Hosting web profesional en España desde 3,90€/mes. Activación inmediata, cPanel, SSL gratis y soporte 24/7. Ideal para autónomos y pequeñas empresas.">
+    <meta name="description" content="Hosting web profesional en España desde 3,90€/mes. 30 días de prueba gratis para nuevos clientes. Activación inmediata, cPanel, SSL gratis y soporte 24/7.">
     
-    <!-- SEO - Keywords (menos importante pero ayuda) -->
-    <meta name="keywords" content="hosting españa, hosting barato, hosting wordpress españa, hosting económico, hosting email profesional, cpanel hosting, hosting autónomos">
+    <!-- SEO - Keywords -->
+    <meta name="keywords" content="hosting españa, hosting barato, hosting wordpress españa, hosting económico, hosting email profesional, cpanel hosting, hosting autónomos, prueba gratis hosting">
     
     <!-- SEO - Información del autor/empresa -->
     <meta name="author" content="Esenex Hosting">
@@ -36,7 +36,7 @@
     <!-- Open Graph - Facebook, LinkedIn, WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hosting Barato España | Esenex Hosting desde 3,90€/mes">
-    <meta property="og:description" content="Hosting web profesional en España. Activación inmediata, cPanel, SSL gratis y soporte 24/7.">
+    <meta property="og:description" content="Hosting web profesional en España. 30 días gratis para nuevos clientes. Activación inmediata, cPanel, SSL gratis y soporte 24/7.">
     <meta property="og:url" content="https://esenex.es/">
     <meta property="og:image" content="https://esenex.es/images/logo_esenex.png">
     <meta property="og:site_name" content="Esenex Hosting">
@@ -45,33 +45,123 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hosting Barato España | Esenex Hosting desde 3,90€/mes">
-    <meta name="twitter:description" content="Hosting web profesional en España. Activación inmediata, cPanel, SSL gratis.">
-    <meta name="twitter:image" content="https://esenex.es/images/logo_esenex.png">
-    
-    <!-- Geo tags - Ubicación -->
-    <meta name="geo.region" content="ES">
-    <meta name="geo.placename" content="España">
-    
-    <!-- Resto del head actual... -->
+    <meta name="twitter:description" content="Hosting web profesional en España. 30 días gratis para nuevos clientes. Activación inmediata, cPanel, SSL gratis.">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
     <link href="css/global/styles.css" rel="stylesheet">
-    
-    <!-- Google Analytics (lo añadiremos después) -->
-    <!-- Google Tag Manager se añadirá aquí -->
-    
-    <!-- Schema.org - Datos Estructurados para Google -->
+
+    <!-- Estilos específicos para el banner de prueba gratuita -->
+    <style>
+        /* Banner superior de prueba gratuita */
+        .trial-banner {
+            background: linear-gradient(90deg, #2e7d32, #43a047, #2e7d32);
+            background-size: 200% 100%;
+            animation: bannerShimmer 3s ease-in-out infinite;
+            color: #fff;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            z-index: 1100;
+        }
+        .trial-banner a {
+            color: #fff;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .trial-banner a:hover {
+            opacity: 0.85;
+        }
+        @keyframes bannerShimmer {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Badge de prueba en hero */
+        .trial-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.18);
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 50px;
+            padding: 7px 20px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 18px;
+            backdrop-filter: blur(4px);
+            animation: pulseBadge 2.5s ease-in-out infinite;
+        }
+        .trial-hero-badge i {
+            color: #a5d6a7;
+        }
+        @keyframes pulseBadge {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.3); }
+            50%       { box-shadow: 0 0 0 8px rgba(255,255,255,0); }
+        }
+
+        /* Tarjeta de prueba en "¿Por qué elegirnos?" */
+        .elegirnos-card.trial-card {
+            border: 2px solid #43a047;
+            position: relative;
+            overflow: hidden;
+        }
+        .elegirnos-card.trial-card::before {
+            content: "NUEVO";
+            position: absolute;
+            top: 12px;
+            right: -22px;
+            background: #43a047;
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            padding: 3px 28px;
+            transform: rotate(35deg);
+        }
+        .elegirnos-card.trial-card i {
+            color: #43a047 !important;
+        }
+
+        /* Fila de prueba gratuita en la tabla comparativa */
+        .trial-row td {
+            background: #e8f5e9 !important;
+            font-weight: 700;
+            color: #2e7d32 !important;
+        }
+        body.dark-mode .trial-row td {
+            background: #1b3a1c !important;
+            color: #a5d6a7 !important;
+        }
+
+        /* FAQ destacado de prueba */
+        .faq-item.trial-highlight {
+            border-left: 4px solid #43a047;
+            background: #f1f8f1;
+            border-radius: 0 8px 8px 0;
+        }
+        body.dark-mode .faq-item.trial-highlight {
+            background: #1b3a1c;
+        }
+    </style>
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebHostingService",
+        "@type": "LocalBusiness",
         "name": "Esenex Hosting",
-        "description": "Servicio de hosting web profesional en España con cPanel, SSL gratis y soporte 24/7",
+        "description": "Empresa de hosting web profesional en España con 30 días de prueba gratis para nuevos clientes",
         "url": "https://esenex.es",
         "logo": "https://esenex.es/images/logo_esenex.png",
-        "image": "https://esenex.es/images/logo_esenex.png",
-        "telephone": "+34-697-764-254",
-        "email": "ventas@esenex.es",
+        "telephone": "+34697764254",
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "ES",
@@ -90,6 +180,14 @@
 
 </head>
 <body>
+
+    <!-- ===== BANNER SUPERIOR: PRUEBA GRATUITA ===== -->
+    <div class="trial-banner">
+        <i class="fas fa-gift"></i>
+        &nbsp;¡<strong>30 días de prueba GRATIS</strong> para nuevos clientes! Sin tarjeta de crédito. Sin compromiso.&nbsp;
+        <a href="#planes-hosting">Empieza hoy →</a>
+    </div>
+
     <!-- Navbar Unificada -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -114,15 +212,23 @@
     </nav>
 
     <div class="container text-end mt-2">
-        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-secondary">Modo Oscuro</button>
+        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-secondary" title="Cambiar modo" style="width:36px;height:36px;padding:0;border-radius:50%;font-size:1rem;line-height:1;"><i class="fas fa-moon"></i></button>
     </div>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO SECTION ===== -->
     <section class="text-center hero-section text-white py-5">
         <div class="container">
             <img src="images/logo_esenex.png" alt="Esenex Hosting - Hosting Web Profesional España" class="hero-logo mb-4">
+
+            <!-- BADGE PRUEBA GRATUITA -->
+            <div class="mb-2">
+                <span class="trial-hero-badge">
+                    <i class="fas fa-star"></i>
+                    30 días de prueba GRATIS para nuevos clientes
+                </span>
+            </div>
+
             <h1 class="display-4 fw-bold">Hosting Web Profesional en España</h1>
-            <!-- AÑADIR ESTA LÍNEA (ayuda SEO con keywords secundarias) -->
             <p class="lead">Planes desde 3,90€/mes con cPanel, SSL gratis, activación inmediata y soporte 24/7</p>
             <a href="#planes-hosting" class="btn btn-modern btn-lg">Ver Planes</a>
         </div>
@@ -133,6 +239,14 @@
         <div class="container text-center">
             <h2 class="mb-4 fw-bold">¿Por qué elegirnos?</h2>
             <div class="row">
+                <!-- Prueba Gratuita 30 días (NUEVO) -->
+                <div class="col-md-3">
+                    <div class="elegirnos-card trial-card p-4">
+                        <i class="fas fa-gift fa-3x mb-3"></i>
+                        <h5 class="fw-bold">30 Días Gratis</h5>
+                        <p>Prueba nuestro hosting sin coste durante 30 días. Sin tarjeta. Sin compromiso.</p>
+                    </div>
+                </div>
                 <!-- Seguridad Avanzada -->
                 <div class="col-md-3">
                     <div class="elegirnos-card p-4">
@@ -149,7 +263,7 @@
                         <p>Nuestro equipo está disponible todo el día para ayudarte en lo que necesites.</p>
                     </div>
                 </div>
-                <!-- Escalabilidad Flexible -->
+                <!-- Activación Inmediata -->
                 <div class="col-md-3">
                     <div class="elegirnos-card p-4">
                         <i class="fas fa-rocket fa-3x mb-3"></i>
@@ -157,24 +271,19 @@
                         <p>Tu hosting estará listo en menos de 5 minutos tras el pago.</p>
                     </div>
                 </div>
-                <!-- Garantía de Uptime -->
-                <div class="col-md-3">
-                    <div class="elegirnos-card p-4">
-                        <i class="fas fa-clock fa-3x mb-3"></i>
-                        <h5 class="fw-bold">Garantía de Uptime</h5>
-                        <p>99.9% de disponibilidad para que tu sitio siempre esté en línea.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
-    
 
 <!-- Sección: Planes de Hosting por tipos -->
     <section id="planes-hosting" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4 fw-bold">Nuestros Planes</h2>
+
+            <!-- Aviso prueba gratuita sobre las tabs -->
+            <div class="alert" style="background:#e8f5e9; border:1px solid #a5d6a7; color:#2e7d32; border-radius:10px; text-align:center; font-weight:600; margin-bottom:24px;">
+                <i class="fas fa-gift"></i>&nbsp; Todos los planes incluyen <strong>30 días de prueba gratuita</strong> para nuevos clientes. Sin coste, sin compromiso.
+            </div>
             
             <!-- Pestañas de Categorías -->
             <ul class="nav nav-tabs justify-content-center mb-4" id="planesTabs">
@@ -217,12 +326,12 @@
                                 </div>
                             </div>
                         </div>
-                
+
                         <!-- Plan 3 -->
                         <div class="col-md-4 mb-4">
                             <div class="card plan-card">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-arrow-up fa-3x mb-3"></i>
+                                    <i class="fas fa-chart-line fa-3x mb-3"></i>
                                     <h5 class="card-title">Plan 3 - Advance</h5>
                                     <p class="card-text">14 GB de almacenamiento<br>1 GB/s de velocidad<br>Correo ilimitado</p>
                                     <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
@@ -231,17 +340,16 @@
                         </div>
                     </div>
                 </div>
-                
-                
+
                 <!-- Planes Avanzados -->
                 <div class="tab-pane fade" id="avanzados">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card plan-card">
                                 <div class="card-body">
-                                    <i class="fas fa-briefcase fa-3x mb-3"></i>
+                                    <i class="fas fa-cogs fa-3x mb-3"></i>
                                     <h5 class="card-title">Plan 4 - Pro</h5>
-                                    <p>22 GB de almacenamiento<br>Transferencia ilimitada<br>Soporte 24/7</p>
+                                    <p>22 GB de almacenamiento<br>Transferencia ilimitada<br>Correos ilimitados</p>
                                     <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
                                 </div>
                             </div>
@@ -249,9 +357,9 @@
                         <div class="col-md-6">
                             <div class="card plan-card">
                                 <div class="card-body">
-                                    <i class="fas fa-battery-full fa-3x mb-3"></i>
+                                    <i class="fas fa-server fa-3x mb-3"></i>
                                     <h5 class="card-title">Plan 5 - Power</h5>
-                                    <p>31 GB de almacenamiento<br>Transferencia ilimitada<br>Soporte prioritario</p>
+                                    <p>31 GB de almacenamiento<br>Transferencia ilimitada<br>Correos ilimitados</p>
                                     <a href="#planes-compare" class="btn btn-contratar">Ver Detalles</a>
                                 </div>
                             </div>
@@ -298,7 +406,7 @@
                 <!-- Compromiso 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="compromiso-card p-4">
-                        <i class="fas fa-lock fa-3x mb-3"></i>
+                      <i class="fas fa-lock fa-3x mb-3"></i>
                         <h5 class="fw-bold">Seguridad Garantizada</h5>
                         <p>Protegemos tus datos con tecnología de punta y encriptación avanzada.</p>
                     </div>
@@ -355,6 +463,11 @@
                     <tr><td>FTP</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
                     <tr><td>cPanel</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
                     <tr><td>Softaculous</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+                    <!-- FILA PRUEBA GRATUITA -->
+                    <tr class="trial-row">
+                        <td><i class="fas fa-gift"></i> Prueba Gratis (nuevos clientes)</td>
+                        <td colspan="7">✔️ 30 días sin coste</td>
+                    </tr>
                     <tr><td>Precio Mensual + IVA</td><td>€3,90</td><td>€5,90</td><td>€9,90</td><td>€13,99</td><td>€18,90</td><td>€28,00</td><td>€39,90</td></tr>
                     <tr>
                         <td></td>
@@ -373,229 +486,558 @@
     </section>
 
     <!-- Sección: Preguntas Frecuentes -->
-    <section id="faq" class="py-5">
+    <section id="faq" class="py-5" style="background:#f8fafc;">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold">Preguntas Frecuentes</h2>
-            
-            <!-- Campo de Búsqueda -->
-            <div class="mb-4">
-                <input type="text" id="faq-search" class="form-control" placeholder="Buscar preguntas...">
+            <h2 class="text-center fw-bold mb-2">Preguntas Frecuentes</h2>
+            <p class="text-center text-muted mb-4">Todo lo que necesitas saber antes de empezar</p>
+
+            <!-- Buscador -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <div style="position:relative;">
+                        <i class="fas fa-search" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#aaa;"></i>
+                        <input type="text" id="faq-search" class="form-control" placeholder="Buscar una pregunta..." style="padding-left:40px;border-radius:30px;border:1px solid #dde3ea;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+                    </div>
+                </div>
             </div>
 
-            <!-- Filtros por Temática -->
-            <div class="mb-4 text-center">
-                <button class="btn btn-outline-primary mx-1 filter-btn active" data-category="all">Todas</button>
-                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="general">General</button>
-                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="planes">Planes</button>
-                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="pagos">Pagos</button>
-                <button class="btn btn-outline-primary mx-1 filter-btn" data-category="tecnico">Soporte Técnico</button>
+            <!-- Filtros -->
+            <div class="mb-5 text-center faq-filters">
+                <button class="faq-filter-btn active" data-category="all"><i class="fas fa-th-large"></i> Todas</button>
+                <button class="faq-filter-btn" data-category="general"><i class="fas fa-info-circle"></i> General</button>
+                <button class="faq-filter-btn" data-category="planes"><i class="fas fa-box"></i> Planes</button>
+                <button class="faq-filter-btn" data-category="pagos"><i class="fas fa-credit-card"></i> Pagos</button>
+                <button class="faq-filter-btn" data-category="tecnico"><i class="fas fa-tools"></i> Soporte Técnico</button>
             </div>
 
-            <!-- Preguntas Frecuentes -->
-            <div id="faq-list">
-                <!-- General -->
-                <div class="faq-item" data-category="general">
-                    <h5>¿Qué es el hosting web?</h5>
-                    <p>El hosting web es un servicio que permite almacenar los archivos de un sitio web para que estén disponibles en Internet.</p>
-                </div>
+            <!-- Acordeón FAQ -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8" id="faq-list">
 
-                <div class="faq-item" data-category="general">
-                    <h5>¿Ofrecen garantía de devolución de dinero?</h5>
-                    <p>Sí, ofrecemos garantía de devolución de dinero dentro de los primeros 30 días si no estás satisfecho con nuestro servicio.</p>
-                </div>
+                    <!-- DESTACADO: Prueba gratuita -->
+                    <div class="faq-item faq-trial" data-category="general">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-gift faq-icon" style="color:#43a047;"></i> ¿Cómo funciona la prueba gratuita de 30 días?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Los nuevos clientes de Esenex pueden probar cualquier plan de hosting durante <strong>30 días completamente gratis</strong>, sin coste alguno. No necesitas introducir tarjeta de crédito. Al finalizar el periodo de prueba, puedes decidir si contratar el plan o cancelar sin ningún cargo.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="general">
-                    <h5>¿Cuánto tiempo tarda en activarse mi hosting?</h5>
-                    <p>La activación es inmediata una vez confirmado el pago. Tu sitio estará listo en cuestión de minutos.</p>
-                </div>
+                    <!-- General -->
+                    <div class="faq-item" data-category="general">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-globe faq-icon"></i> ¿Qué es el hosting web?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El hosting web es un servicio que permite almacenar los archivos de un sitio web para que estén disponibles en Internet.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="general">
-                    <h5>¿Puedo transferir mi dominio existente?</h5>
-                    <p>Sí, puedes transferir tu dominio desde otro proveedor. Nuestro equipo te guiará durante todo el proceso sin costo adicional.</p>
-                </div>
+                    <div class="faq-item" data-category="general">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-undo faq-icon"></i> ¿Ofrecen garantía de devolución de dinero?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, además de los 30 días de prueba gratuita, ofrecemos garantía de devolución de dinero dentro de los primeros 30 días si no estás satisfecho con nuestro servicio.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="general">
-                    <h5>¿Es necesario tener conocimientos técnicos?</h5>
-                    <p>No es necesario. Nuestro panel de control cPanel es muy intuitivo y fácil de usar. Además, contamos con tutoriales y soporte para ayudarte.</p>
-                </div>
+                    <div class="faq-item" data-category="general">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-bolt faq-icon"></i> ¿Cuánto tiempo tarda en activarse mi hosting?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>La activación es inmediata una vez confirmado el registro. Tu sitio estará listo en cuestión de minutos, incluso durante la prueba gratuita.</p>
+                        </div>
+                    </div>
 
-                <!-- Planes -->
-                <div class="faq-item" data-category="planes">
-                    <h5>¿Cuál es la diferencia entre los planes Start y Boost?</h5>
-                    <p>El plan Boost ofrece más almacenamiento (7 GB vs 4 GB) y recursos adicionales, ideal para sitios con más tráfico y contenido.</p>
-                </div>
+                    <div class="faq-item" data-category="general">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-exchange-alt faq-icon"></i> ¿Puedo transferir mi dominio existente?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes transferir tu dominio desde otro proveedor. Nuestro equipo te guiará durante todo el proceso sin costo adicional.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="planes">
-                    <h5>¿Puedo cambiar de plan después de contratar uno?</h5>
-                    <p>Sí, puedes actualizar o degradar tu plan en cualquier momento desde tu panel de usuario sin perder ningún dato.</p>
-                </div>
+                    <div class="faq-item" data-category="general">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-user faq-icon"></i> ¿Es necesario tener conocimientos técnicos?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No es necesario. Nuestro panel de control cPanel es muy intuitivo y fácil de usar. Además, contamos con tutoriales y soporte para ayudarte.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="planes">
-                    <h5>¿Cuál plan me recomiendan para un sitio de comercio electrónico?</h5>
-                    <p>Para tiendas online recomendamos los planes Pro o superiores, ya que ofrecen más recursos, bases de datos y mejor rendimiento para manejar transacciones.</p>
-                </div>
+                    <!-- Planes -->
+                    <div class="faq-item" data-category="planes">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-gift faq-icon" style="color:#43a047;"></i> ¿La prueba gratuita aplica a todos los planes?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, los 30 días de prueba gratuita están disponibles para todos nuestros planes, desde el Start hasta el Unlimited. Puedes probar el que mejor se adapte a tus necesidades.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="planes">
-                    <h5>¿Hay límite de tráfico en los planes?</h5>
-                    <p>No, todos nuestros planes incluyen transferencia mensual ilimitada para que no te preocupes por el tráfico de tu sitio.</p>
-                </div>
+                    <div class="faq-item" data-category="planes">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-balance-scale faq-icon"></i> ¿Cuál es la diferencia entre los planes Start y Boost?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El plan Boost ofrece más almacenamiento (7 GB vs 4 GB) y recursos adicionales, ideal para sitios con más tráfico y contenido.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="planes">
-                    <h5>¿Puedo hospedar múltiples sitios web en un solo plan?</h5>
-                    <p>Depende del plan. Los planes Pro, Power, Elite y Unlimited permiten hospedar múltiples dominios y sitios web.</p>
-                </div>
+                    <div class="faq-item" data-category="planes">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-arrows-alt-v faq-icon"></i> ¿Puedo cambiar de plan después de contratar uno?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes actualizar o degradar tu plan en cualquier momento desde tu panel de usuario sin perder ningún dato.</p>
+                        </div>
+                    </div>
 
-                <!-- Pagos -->
-                <div class="faq-item" data-category="pagos">
-                    <h5>¿Qué métodos de pago aceptan?</h5>
-                    <p>Aceptamos pagos con tarjetas de crédito, débito, transferencias bancarias y PayPal para tu conveniencia.</p>
-                </div>
+                    <div class="faq-item" data-category="planes">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-shopping-cart faq-icon"></i> ¿Cuál plan recomiendan para comercio electrónico?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para tiendas online recomendamos los planes Pro o superiores, ya que ofrecen más recursos, bases de datos y mejor rendimiento para manejar transacciones.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="pagos">
-                    <h5>¿Los precios incluyen IVA?</h5>
-                    <p>Los precios mostrados no incluyen IVA. El impuesto se añadirá al finalizar la compra según la legislación vigente.</p>
-                </div>
+                    <div class="faq-item" data-category="planes">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-infinity faq-icon"></i> ¿Hay límite de tráfico en los planes?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, todos nuestros planes incluyen transferencia mensual ilimitada para que no te preocupes por el tráfico de tu sitio.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="pagos">
-                    <h5>¿Puedo pagar anualmente y obtener descuento?</h5>
-                    <p>Sí, ofrecemos descuentos especiales para pagos anuales. Contacta con nuestro equipo de ventas para conocer las promociones vigentes.</p>
-                </div>
+                    <div class="faq-item" data-category="planes">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-layer-group faq-icon"></i> ¿Puedo hospedar múltiples sitios web?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Depende del plan. Los planes Pro, Power, Elite y Unlimited permiten hospedar múltiples dominios y sitios web.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="pagos">
-                    <h5>¿Qué pasa si no renuevo mi plan a tiempo?</h5>
-                    <p>Tu cuenta entra en periodo de gracia por 7 días. Pasado ese tiempo, los datos se suspenden temporalmente pero pueden recuperarse contactando a soporte.</p>
-                </div>
+                    <!-- Pagos -->
+                    <div class="faq-item" data-category="pagos">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-credit-card faq-icon"></i> ¿Qué métodos de pago aceptan?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Aceptamos pagos con tarjetas de crédito, débito, transferencias bancarias y PayPal para tu conveniencia.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="pagos">
-                    <h5>¿Hay costos ocultos o cargos adicionales?</h5>
-                    <p>No, no hay costos ocultos. El precio que ves es el que pagas. Los únicos cargos adicionales son por servicios extra que elijas contratar.</p>
-                </div>
+                    <div class="faq-item" data-category="pagos">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-percent faq-icon"></i> ¿Los precios incluyen IVA?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Los precios mostrados no incluyen IVA. El impuesto se añadirá al finalizar la compra según la legislación vigente.</p>
+                        </div>
+                    </div>
 
-                <!-- Soporte Técnico -->
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Cómo puedo contactar al soporte técnico?</h5>
-                    <p>Puedes contactarnos a través del chat en vivo, enviando un correo a soporte@esenex.com o mediante nuestro formulario de contacto.</p>
-                </div>
+                    <div class="faq-item" data-category="pagos">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-calendar-alt faq-icon"></i> ¿Puedo pagar anualmente y obtener descuento?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos descuentos especiales para pagos anuales. Contacta con nuestro equipo de ventas para conocer las promociones vigentes.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Realizan backups de mi sitio web?</h5>
-                    <p>Sí, realizamos backups automáticos semanales de todos los sitios. También puedes crear backups manuales desde tu cPanel cuando lo necesites.</p>
-                </div>
+                    <div class="faq-item" data-category="pagos">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-clock faq-icon"></i> ¿Qué pasa si no renuevo mi plan a tiempo?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Tu cuenta entra en periodo de gracia por 7 días. Pasado ese tiempo, los datos se suspenden temporalmente pero pueden recuperarse contactando a soporte.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Incluyen certificado SSL?</h5>
-                    <p>Sí, todos nuestros planes incluyen certificado SSL gratuito de Let's Encrypt para proteger la información de tus visitantes.</p>
-                </div>
+                    <div class="faq-item" data-category="pagos">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-eye-slash faq-icon"></i> ¿Hay costos ocultos o cargos adicionales?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, no hay costos ocultos. El precio que ves es el que pagas. Los únicos cargos adicionales son por servicios extra que elijas contratar.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Qué versiones de PHP soportan?</h5>
-                    <p>Soportamos múltiples versiones de PHP (desde 7.4 hasta la 8.3) y puedes cambiar entre ellas fácilmente desde tu cPanel.</p>
-                </div>
+                    <!-- Soporte Técnico -->
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-headset faq-icon"></i> ¿Cómo puedo contactar al soporte técnico?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes contactarnos a través del chat en vivo, enviando un correo a soporte@esenex.com o mediante nuestro formulario de contacto.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Puedo instalar WordPress u otros CMS?</h5>
-                    <p>Sí, incluimos Softaculous que te permite instalar WordPress, Joomla, Drupal y más de 400 aplicaciones con un solo clic.</p>
-                </div>
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-database faq-icon"></i> ¿Realizan backups de mi sitio web?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, realizamos backups automáticos semanales de todos los sitios. También puedes crear backups manuales desde tu cPanel cuando lo necesites.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Tienen protección contra malware?</h5>
-                    <p>Sí, todos nuestros servidores cuentan con protección antivirus y anti-malware que escanea archivos automáticamente.</p>
-                </div>
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-lock faq-icon"></i> ¿Incluyen certificado SSL?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, todos nuestros planes incluyen certificado SSL gratuito de Let's Encrypt para proteger la información de tus visitantes.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item" data-category="tecnico">
-                    <h5>¿Cómo accedo a mi correo electrónico?</h5>
-                    <p>Puedes acceder a tu correo a través de WebMail desde cualquier navegador, o configurarlo en aplicaciones como Outlook, Thunderbird o en tu dispositivo móvil.</p>
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-code faq-icon"></i> ¿Qué versiones de PHP soportan?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Soportamos múltiples versiones de PHP (desde 7.4 hasta la 8.3) y puedes cambiar entre ellas fácilmente desde tu cPanel.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fab fa-wordpress faq-icon"></i> ¿Puedo instalar WordPress u otros CMS?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, incluimos Softaculous que te permite instalar WordPress, Joomla, Drupal y más de 400 aplicaciones con un solo clic.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-shield-virus faq-icon"></i> ¿Tienen protección contra malware?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, todos nuestros servidores cuentan con protección antivirus y anti-malware que escanea archivos automáticamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="tecnico">
+                        <button class="faq-question" aria-expanded="false">
+                            <span><i class="fas fa-envelope faq-icon"></i> ¿Cómo accedo a mi correo electrónico?</span>
+                            <i class="fas fa-chevron-down faq-chevron"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes acceder a tu correo a través de WebMail desde cualquier navegador, o configurarlo en aplicaciones como Outlook, Thunderbird o en tu dispositivo móvil.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        /* ===== FAQ ACORDEÓN ===== */
+        #faq { background: #f8fafc; }
+
+        /* Botones de filtro */
+        .faq-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+        .faq-filter-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 18px; border-radius: 30px; border: 2px solid #dde3ea;
+            background: #fff; color: #555; font-size: 0.875rem; font-weight: 600;
+            cursor: pointer; transition: all 0.2s ease;
+        }
+        .faq-filter-btn:hover { border-color: #66b2cc; color: #66b2cc; }
+        .faq-filter-btn.active { background: #66b2cc; border-color: #66b2cc; color: #fff; }
+
+        /* Item FAQ */
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #e8edf2;
+            overflow: hidden;
+            transition: box-shadow 0.2s ease;
+        }
+        .faq-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+        /* Item destacado (prueba gratuita) */
+        .faq-trial {
+            border: 2px solid #a5d6a7;
+            background: linear-gradient(135deg, #f1f8f1 0%, #fff 60%);
+        }
+
+        /* Botón pregunta */
+        .faq-question {
+            width: 100%; display: flex; align-items: center; justify-content: space-between;
+            padding: 16px 20px; background: none; border: none; cursor: pointer;
+            text-align: left; font-size: 0.95rem; font-weight: 600; color: #2d3748;
+            gap: 12px;
+        }
+        .faq-question span { display: flex; align-items: center; gap: 10px; flex: 1; }
+        .faq-question:hover { color: #4a90a4; }
+        .faq-question[aria-expanded="true"] { color: #4a90a4; }
+
+        /* Icono */
+        .faq-icon { font-size: 1rem; color: #66b2cc; min-width: 18px; }
+
+        /* Chevron animado */
+        .faq-chevron { font-size: 0.8rem; color: #aaa; transition: transform 0.25s ease; flex-shrink: 0; }
+        .faq-question[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); color: #4a90a4; }
+
+        /* Respuesta colapsable */
+        .faq-answer {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 20px;
+        }
+        .faq-answer.open {
+            max-height: 300px;
+            padding: 0 20px 16px 48px;
+        }
+        .faq-answer p { margin: 0; color: #555; font-size: 0.9rem; line-height: 1.7; }
+
+        /* Modo oscuro */
+        body.dark-mode .faq-item { background: #1f1f1f; border-color: #333; }
+        body.dark-mode .faq-question { color: #e0e0e0; }
+        body.dark-mode .faq-question:hover,
+        body.dark-mode .faq-question[aria-expanded="true"] { color: #66b2cc; }
+        body.dark-mode .faq-answer p { color: #aaa; }
+        body.dark-mode .faq-trial { background: #1b3a1c; border-color: #43a047; }
+        body.dark-mode .faq-filter-btn { background: #2a2a2a; border-color: #444; color: #ccc; }
+        body.dark-mode .faq-filter-btn.active { background: #4a90a4; border-color: #4a90a4; color: #fff; }
+        body.dark-mode #faq { background: #121212; }
+    </style>
 
     <section id="contacto" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contáctanos</h2>
-            <p class="text-center mb-4">¿Tienes dudas o necesitas ayuda? Completa el formulario y nos pondremos en contacto contigo.</p>
-            <form id="contact-form" action="send_email.php" method="POST" class="needs-validation" novalidate>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="name" class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                        <div class="invalid-feedback">Por favor, ingresa tu nombre completo.</div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                        <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
-                    </div>
+            <h2 class="text-center mb-2">Contáctanos</h2>
+            <p class="text-center text-muted mb-4">¿Tienes dudas o necesitas ayuda? Te respondemos en menos de 24 horas.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+
+                    <!-- Mensaje de estado (éxito / error) -->
+                    <div id="form-message" class="alert mb-4" style="display:none;"></div>
+
+                    <form id="contact-form" action="send_email.php" method="POST" novalidate>
+
+                        <!-- Nombre -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-semibold">Nombre <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                   placeholder="Tu nombre completo" minlength="3" required>
+                            <div class="invalid-feedback">Solo se permiten letras y espacios (mínimo 3 caracteres).</div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="contact-email" name="email"
+                                   placeholder="tu@email.com" required>
+                            <div class="invalid-feedback">Introduce un email válido (ej: nombre@dominio.com).</div>
+                        </div>
+
+                        <!-- Mensaje -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-semibold">Mensaje <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" name="message" rows="4"
+                                      placeholder="¿En qué podemos ayudarte?" minlength="20" required></textarea>
+                            <div class="invalid-feedback">El mensaje debe tener al menos 20 caracteres.</div>
+                            <div class="form-text text-end">
+                                <span id="msg-counter">0</span> caracteres
+                                <span id="msg-counter-hint" class="text-muted"> (mínimo 20)</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="contact-submit" class="btn btn-modern w-100">
+                            <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                    <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
-                </div>
-                <div id="form-message" class="alert" style="display: none;"></div>
-                <div class="text-center">
-                    <button type="submit" class="btn-modern">Enviar Mensaje</button>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer Mejorado -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Columna 1: Sobre Esenex -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Esenex Hosting</h5>
-                    <p>Soluciones de hosting profesional desde 2017. Calidad, velocidad y soporte excepcional.</p>
-                    <div class="social-links mt-3">
-                        <a href="https://wa.me/34697764254" class="text-white me-3" target="_blank" title="WhatsApp">
-                            <i class="fab fa-whatsapp fa-2x"></i>
-                        </a>
-                    </div>
-                </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form       = document.getElementById('contact-form');
+        var submitBtn  = document.getElementById('contact-submit');
+        var msgDiv     = document.getElementById('form-message');
+        var nameInput  = document.getElementById('name');
+        var emailInput = document.getElementById('contact-email');
+        var msgInput   = document.getElementById('message');
+        var counter    = document.getElementById('msg-counter');
+        var counterHint = document.getElementById('msg-counter-hint');
 
-                <!-- Columna 2: Enlaces Rápidos -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Enlaces Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
-                        <li class="mb-2"><a href="index.html#planes-hosting" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Planes</a></li>
-                        <li class="mb-2"><a href="sobre-nosotros.html" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Sobre Nosotros</a></li>
-                        <li class="mb-2"><a href="index.html#faq" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>FAQ</a></li>
-                        <li class="mb-2"><a href="index.html#contacto" class="text-white" style="text-decoration: none;"><i class="fas fa-chevron-right me-2"></i>Contacto</a></li>
-                    </ul>
-                </div>
+        // --- Contador de caracteres del mensaje ---
+        msgInput.addEventListener('input', function () {
+            var len = msgInput.value.length;
+            counter.textContent = len;
+            if (len >= 20) {
+                counter.style.color = '#43a047';
+                counterHint.style.display = 'none';
+            } else {
+                counter.style.color = '#e53e3e';
+                counterHint.style.display = '';
+            }
+        });
 
-                <!-- Columna 3: Legal y Contacto -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-3">Legal</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="politica-privacidad.html" class="text-white" style="text-decoration: none;"><i class="fas fa-shield-alt me-2"></i>Política de Privacidad</a></li>
-                    </ul>
-                    <h5 class="mb-3 mt-4">Contacto</h5>
-                    <p class="mb-1"><i class="fas fa-envelope me-2"></i><a href="mailto:ventas@esenex.es" class="text-white" style="text-decoration: none;">ventas@esenex.es</a></p>
-                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+34 697 764 254</p>
-                    <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>Girona, España</p>
-                </div>
-            </div>
+        // Registrar qué campos han sido tocados (blur)
+        var touched = { name: false, email: false, message: false };
+        [nameInput, emailInput, msgInput].forEach(function (field) {
+            field.addEventListener('blur', function () {
+                var key = field.id === 'contact-email' ? 'email' : field.id === 'name' ? 'name' : 'message';
+                touched[key] = true;
+                if (field.value.length > 0) {
+                    validateField(field);
+                }
+            });
+        });
 
-            <!-- Copyright -->
-            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p class="mb-0">&copy; 2026 Esenex Hosting. Todos los derechos reservados.</p>
-                </div>
-            </div>
+        // --- Revalidar campo en tiempo real solo si tiene contenido o ya fue tocado ---
+        [nameInput, emailInput, msgInput].forEach(function (field) {
+            field.addEventListener('input', function () {
+                var key = field.id === 'contact-email' ? 'email' : field.id === 'name' ? 'name' : 'message';
+                if (field.value.length > 0 || touched[key]) {
+                    validateField(field);
+                } else {
+                    field.classList.remove('is-valid', 'is-invalid');
+                }
+                // Ocultar mensaje de advertencia usando checkValidity interno, sin tocar clases
+                var nameOk  = nameInput.value.length >= 3  && /^[a-záéíóúàèìòùâêîôûäëïöüñçA-ZÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÑÇ\s'-]+$/.test(nameInput.value.trim());
+                var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailInput.value.trim());
+                var msgOk   = msgInput.value.length >= 20;
+                if (nameOk && emailOk && msgOk) {
+                    msgDiv.style.display = 'none';
+                }
+            });
+        });
+
+        function validateField(field) {
+            var ok = field.checkValidity();
+            // Validación extra para email: debe tener formato completo (usuario@dominio.ext)
+            if (field.type === 'email' && ok) {
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+                ok = emailRegex.test(field.value.trim());
+            }
+            // Validación extra para nombre: solo letras, espacios y caracteres acentuados
+            if (field.id === 'name' && ok) {
+                var nameRegex = /^[a-záéíóúàèìòùâêîôûäëïöüñçA-ZÁÉÍÓÚÀÈÌÒÙÂÊÎÔÛÄËÏÖÜÑÇ\s'-]+$/;
+                ok = nameRegex.test(field.value.trim());
+            }
+            field.classList.toggle('is-invalid', !ok);
+            field.classList.toggle('is-valid', ok);
+            return ok;
+        }
+
+        function showMessage(type, text) {
+            msgDiv.className = 'alert alert-' + type;
+            msgDiv.innerHTML = text;
+            msgDiv.style.display = 'block';
+            msgDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // --- Mostrar mensaje si venimos de redireccion del servidor ---
+        var params = new URLSearchParams(window.location.search);
+        var status = params.get('status');
+        if (status === 'success') {
+            showMessage('success', '<i class="fas fa-check-circle me-2"></i><strong>¡Mensaje enviado!</strong> Te responderemos en menos de 24 horas.');
+        } else if (status === 'error') {
+            showMessage('danger', '<i class="fas fa-exclamation-circle me-2"></i>Hubo un error al enviar el mensaje. Por favor inténtalo de nuevo o escríbenos a <a href="mailto:ventas@esenex.es">ventas@esenex.es</a>.');
+        } else if (status === 'invalid') {
+            showMessage('warning', '<i class="fas fa-exclamation-triangle me-2"></i>Por favor, completa todos los campos correctamente antes de enviar.');
+        }
+
+        // --- Envío del formulario ---
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var nameOk  = validateField(nameInput);
+            var emailOk = validateField(emailInput);
+            var msgOk   = validateField(msgInput);
+
+            if (!nameOk || !emailOk || !msgOk) {
+                showMessage('warning', '<i class="fas fa-exclamation-triangle me-2"></i>Por favor, corrige los campos marcados en rojo.');
+                return;
+            }
+
+            // Deshabilitar botón mientras se envía
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+
+            // Enviar vía fetch para mostrar el mensaje sin recargar
+            var data = new FormData(form);
+            fetch('send_email.php', { method: 'POST', body: data })
+                .then(function (res) {
+                    showMessage('success', '<i class="fas fa-check-circle me-2"></i><strong>¡Mensaje enviado!</strong> Te responderemos en menos de 24 horas.');
+                    form.reset();
+                    form.classList.remove('was-validated');
+                    counter.textContent = '0';
+                    counter.style.color = '';
+                    counterHint.style.display = '';
+                    [nameInput, emailInput, msgInput].forEach(function (f) {
+                        f.classList.remove('is-valid', 'is-invalid');
+                    });
+                })
+                .catch(function () {
+                    showMessage('danger', '<i class="fas fa-exclamation-circle me-2"></i>Error de conexión. Escríbenos directamente a <a href="mailto:ventas@esenex.es">ventas@esenex.es</a>.');
+                })
+                .finally(function () {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Enviar Mensaje';
+                });
+        });
+    });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Esenex Hosting. Todos los derechos reservados.</p>
+            <p class="mb-0">
+                <a href="index.html" class="text-white me-3">Inicio</a>
+                <a href="sobre-nosotros.html" class="text-white me-3">Sobre Nosotros</a>
+                <a href="politica-privacidad.html" class="text-white me-3">Política de Privacidad</a>
+                <a href="index.html#contacto" class="text-white">Contacto</a>
+            </p>
         </div>
     </footer>
 
     <script src="js/global/scripts.js" defer></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/+34697764254" class="whatsapp-button" target="_blank" data-bs-toggle="tooltip" data-bs-placement="left" title="Un agente te ayudará">
-        <i class="fab fa-whatsapp" style="position: fixed; bottom: 20px; right: 20px; width: 55px; height: 55px; z-index: 1000; font-size: 55px; color: #25D366;"></i>
+    <a href="https://wa.me/+34697764254" class="whatsapp-button" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 55px; height: 55px; z-index: 1000;" data-bs-toggle="tooltip" data-bs-placement="left" title="Un agente te ayudará">
     </a>
     
     <!-- Botón Volver Arriba -->
@@ -607,68 +1049,287 @@
             sessionStorage.setItem("precio", precio);
             return true;
         }
+
+        function contratarPlan(plan, precio) {
+            sessionStorage.setItem("plan", plan);
+            sessionStorage.setItem("precio", precio);
+            window.location.href = "contratar_unificado.html";
+        }
     </script>
     
-    <!-- JavaScript para el filtro de FAQ -->
+    <!-- JavaScript FAQ acordeón + filtros -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('faq-search');
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            // Función para filtrar preguntas
-            function filterFAQs() {
-                const searchTerm = searchInput.value.toLowerCase();
-                const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
-                
-                faqItems.forEach(item => {
-                    const question = item.querySelector('h5').textContent.toLowerCase();
-                    const answer = item.querySelector('p').textContent.toLowerCase();
-                    const category = item.dataset.category;
-                    
-                    // Verificar si coincide con la búsqueda
-                    const matchesSearch = question.includes(searchTerm) || answer.includes(searchTerm);
-                    
-                    // Verificar si coincide con la categoría
-                    const matchesCategory = activeCategory === 'all' || category === activeCategory;
-                    
-                    // Mostrar u ocultar según los filtros
-                    if (matchesSearch && matchesCategory) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- ACORDEÓN ---
+            document.querySelectorAll('.faq-question').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    const answer = this.nextElementSibling;
+                    const isOpen = this.getAttribute('aria-expanded') === 'true';
+
+                    // Cerrar todos
+                    document.querySelectorAll('.faq-question').forEach(function (b) {
+                        b.setAttribute('aria-expanded', 'false');
+                        b.nextElementSibling.classList.remove('open');
+                    });
+
+                    // Abrir el pulsado si estaba cerrado
+                    if (!isOpen) {
+                        this.setAttribute('aria-expanded', 'true');
+                        answer.classList.add('open');
                     }
                 });
+            });
+
+            // --- FILTROS + BUSCADOR ---
+            const searchInput = document.getElementById('faq-search');
+            const filterBtns = document.querySelectorAll('.faq-filter-btn');
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            function applyFilters() {
+                const term = searchInput.value.toLowerCase();
+                const cat = document.querySelector('.faq-filter-btn.active').dataset.category;
+
+                faqItems.forEach(function (item) {
+                    const text = item.textContent.toLowerCase();
+                    const matchesCat = cat === 'all' || item.dataset.category === cat;
+                    const matchesSearch = text.includes(term);
+                    item.style.display = (matchesCat && matchesSearch) ? '' : 'none';
+                });
             }
-            
-            // Evento de búsqueda
-            searchInput.addEventListener('input', filterFAQs);
-            
-            // Eventos de botones de filtro
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remover clase active de todos los botones
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Agregar clase active al botón clickeado
+
+            searchInput.addEventListener('input', applyFilters);
+
+            filterBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    filterBtns.forEach(function (b) { b.classList.remove('active'); });
                     this.classList.add('active');
-                    // Aplicar filtro
-                    filterFAQs();
+                    applyFilters();
                 });
             });
         });
     </script>
 
-    <!-- funcion ccontratar plan -->
+    <!-- Dark mode toggle: sincroniza el ícono con la clase del body -->
     <script>
-        function contratarPlan(plan, precio) {
-            // Guardar datos en sessionStorage
-            sessionStorage.setItem("plan", plan);
-            sessionStorage.setItem("precio", precio);
-    
-            // Redirigir al formulario unificado
-            window.location.href = "contratar_unificado.html";
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            var icon = document.querySelector('#dark-mode-toggle i');
+
+            // Sincronizar ícono con el estado actual (por si localStorage ya activó dark mode)
+            function syncIcon() {
+                icon.className = document.body.classList.contains('dark-mode') ? 'fas fa-sun' : 'fas fa-moon';
+            }
+
+            // Observar cambios en las clases del body (lo cambia scripts.js)
+            var observer = new MutationObserver(syncIcon);
+            observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+            // Sincronizar al cargar
+            syncIcon();
+        });
     </script>
 
+    <!-- Scroll to top -->
+    <script>
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        window.addEventListener('scroll', function() {
+            scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        scrollBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- ===== BANNER DE COOKIES RGPD ===== -->
+    <div id="cookie-banner" style="display:none;">
+        <div id="cookie-simple">
+            <div class="cookie-text">
+                <i class="fas fa-cookie-bite"></i>
+                <span>Usamos cookies propias y de terceros (Google Analytics) para mejorar tu experiencia y analizar el uso del sitio.
+                <a href="politica-privacidad.html#cookies">Más información</a></span>
+            </div>
+            <div class="cookie-buttons">
+                <button id="cookie-settings-btn">Personalizar</button>
+                <button id="cookie-reject-btn">Rechazar</button>
+                <button id="cookie-accept-btn">Aceptar todas</button>
+            </div>
+        </div>
+
+        <!-- Panel de personalización -->
+        <div id="cookie-settings" style="display:none;">
+            <h6><i class="fas fa-sliders-h"></i> Configuración de cookies</h6>
+            <div class="cookie-option">
+                <div>
+                    <strong>Cookies necesarias</strong>
+                    <p>Imprescindibles para el funcionamiento del sitio. No pueden desactivarse.</p>
+                </div>
+                <label class="cookie-toggle">
+                    <input type="checkbox" checked disabled>
+                    <span class="cookie-slider locked"></span>
+                </label>
+            </div>
+            <div class="cookie-option">
+                <div>
+                    <strong>Cookies analíticas</strong>
+                    <p>Nos ayudan a entender cómo se usa el sitio (Google Analytics).</p>
+                </div>
+                <label class="cookie-toggle">
+                    <input type="checkbox" id="analytics-toggle" checked>
+                    <span class="cookie-slider"></span>
+                </label>
+            </div>
+            <div class="cookie-settings-actions">
+                <button id="cookie-save-btn">Guardar preferencias</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #cookie-banner {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            background: #1a202c;
+            color: #e2e8f0;
+            z-index: 9999;
+            padding: 16px 24px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+            font-size: 0.875rem;
+        }
+        #cookie-simple {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .cookie-text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .cookie-text i { color: #66b2cc; font-size: 1.2rem; flex-shrink: 0; }
+        .cookie-text a { color: #66b2cc; text-decoration: underline; }
+        .cookie-buttons {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+        .cookie-buttons button {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .cookie-buttons button:hover { opacity: 0.85; }
+        #cookie-accept-btn  { background: #66b2cc; color: #fff; }
+        #cookie-reject-btn  { background: transparent; color: #a0aec0; border: 1px solid #4a5568 !important; }
+        #cookie-settings-btn { background: transparent; color: #a0aec0; border: 1px solid #4a5568 !important; }
+
+        /* Panel de personalización */
+        #cookie-settings {
+            border-top: 1px solid #2d3748;
+            margin-top: 14px;
+            padding-top: 14px;
+        }
+        #cookie-settings h6 {
+            color: #e2e8f0;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+        }
+        .cookie-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 10px 0;
+            border-bottom: 1px solid #2d3748;
+        }
+        .cookie-option:last-of-type { border-bottom: none; }
+        .cookie-option strong { display: block; color: #e2e8f0; margin-bottom: 2px; }
+        .cookie-option p { margin: 0; color: #718096; font-size: 0.8rem; }
+
+        /* Toggle switch */
+        .cookie-toggle { position: relative; display: inline-block; width: 44px; height: 24px; flex-shrink: 0; }
+        .cookie-toggle input { opacity: 0; width: 0; height: 0; }
+        .cookie-slider {
+            position: absolute; inset: 0;
+            background: #4a5568; border-radius: 24px;
+            cursor: pointer; transition: background 0.2s;
+        }
+        .cookie-slider::before {
+            content: ''; position: absolute;
+            width: 18px; height: 18px; border-radius: 50%;
+            background: #fff; left: 3px; top: 3px;
+            transition: transform 0.2s;
+        }
+        .cookie-toggle input:checked + .cookie-slider { background: #66b2cc; }
+        .cookie-toggle input:checked + .cookie-slider::before { transform: translateX(20px); }
+        .cookie-slider.locked { cursor: not-allowed; background: #2d6a4f; }
+
+        .cookie-settings-actions { margin-top: 14px; text-align: right; }
+        #cookie-save-btn {
+            background: #66b2cc; color: #fff;
+            border: none; padding: 8px 20px;
+            border-radius: 6px; font-weight: 600;
+            font-size: 0.85rem; cursor: pointer;
+        }
+        #cookie-save-btn:hover { opacity: 0.85; }
+
+        @media (max-width: 600px) {
+            #cookie-simple { flex-direction: column; align-items: flex-start; }
+            .cookie-buttons { width: 100%; justify-content: flex-end; }
+        }
+    </style>
+
+    <script>
+    (function () {
+        var banner    = document.getElementById('cookie-banner');
+        var simple    = document.getElementById('cookie-simple');
+        var settings  = document.getElementById('cookie-settings');
+        var consent   = localStorage.getItem('cookie-consent');
+
+        // Si ya hay preferencia guardada, no mostrar banner
+        if (consent) {
+            applyConsent(JSON.parse(consent));
+            return;
+        }
+        banner.style.display = 'block';
+
+        document.getElementById('cookie-accept-btn').addEventListener('click', function () {
+            save({ necessary: true, analytics: true });
+        });
+
+        document.getElementById('cookie-reject-btn').addEventListener('click', function () {
+            save({ necessary: true, analytics: false });
+        });
+
+        document.getElementById('cookie-settings-btn').addEventListener('click', function () {
+            settings.style.display = settings.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.getElementById('cookie-save-btn').addEventListener('click', function () {
+            var analytics = document.getElementById('analytics-toggle').checked;
+            save({ necessary: true, analytics: analytics });
+        });
+
+        function save(prefs) {
+            localStorage.setItem('cookie-consent', JSON.stringify(prefs));
+            banner.style.display = 'none';
+            applyConsent(prefs);
+        }
+
+        function applyConsent(prefs) {
+            if (!prefs.analytics) {
+                // Deshabilitar Google Analytics
+                window['ga-disable-G-83Q835LHVR'] = true;
+            }
+        }
+    })();
+    </script>
 </body>
 </html>
